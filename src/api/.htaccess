@@ -1,0 +1,36 @@
+# PHP hata raporlamayı kapat
+php_flag display_errors off
+
+# Dizin listelemesini kapat
+Options -Indexes
+
+# Rewrite motorunu aç
+RewriteEngine On
+
+# API endpoint'lerine yönlendirme
+RewriteRule ^contact$ handlers/contact.php [L]
+
+# Güvenlik başlıkları
+Header set X-Content-Type-Options "nosniff"
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+# PHP dosyalarına doğrudan erişimi engelle
+RewriteRule ^(config|utils)/.*\.php$ - [F]
+
+# Uploads dizinine doğrudan erişimi engelle
+<Directory "uploads">
+    Order deny,allow
+    Deny from all
+</Directory>
+
+# Sadece belirli dosya türlerine izin ver
+<FilesMatch "\.(php)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Maksimum dosya yükleme boyutu
+php_value upload_max_filesize 5M
+php_value post_max_size 6M 

@@ -1,0 +1,357 @@
+# AppHouse Design - Proje Kuralları ve Standartları
+
+## 1. Teknoloji Stack'i
+
+### Frontend Teknolojileri
+- **Ana Framework**: React 18+ (Create React App)
+- **State Yönetimi**: Redux Toolkit
+- **Routing**: React Router v6
+- **UI Framework**: 
+  - Tailwind CSS
+  - Framer Motion (Animasyonlar için)
+  - Headless UI (Erişilebilir komponentler için)
+- **Form Yönetimi**: React Hook Form + Yup validasyon
+- **HTTP Client**: Axios
+- **Build Tool**: Vite (Daha hızlı build ve development deneyimi için)
+
+### SEO ve Performans Araçları
+- **Pre-rendering**: React Snap (statik sayfa oluşturma için)
+- **Meta Tag Yönetimi**: React Helmet
+- **Analytics**: Google Analytics 4
+- **Performans İzleme**: Web Vitals
+- **Sitemap**: React Router Sitemap
+- **Compression**: Gzip/Brotli için .htaccess konfigürasyonu
+
+### Kod Kalitesi ve Standartları
+- **Linter**: ESLint
+- **Code Formatter**: Prettier
+- **Type Checking**: TypeScript
+- **Testing**: Jest + React Testing Library
+- **Git Hook'ları**: Husky
+
+## 2. Proje Yapısı
+
+```
+src/
+├── components/
+│   ├── common/         # Genel kullanım komponentleri
+│   ├── layout/         # Layout ile ilgili komponentler
+│   ├── sections/       # Sayfa bölümleri
+│   └── features/       # Özellik bazlı komponentler
+├── pages/              # Sayfa komponentleri
+├── hooks/              # Custom hooks
+├── store/              # Redux store ve slice'lar
+├── services/           # API servisleri
+├── utils/              # Yardımcı fonksiyonlar
+├── styles/             # Global stiller
+└── types/              # TypeScript type tanımlamaları
+```
+
+## 3. SEO Kuralları
+
+- Her sayfa için özel meta başlıkları ve açıklamalar
+- Semantic HTML kullanımı
+- Yapısal veri (Schema.org) implementasyonu
+- Sayfa yükleme hızı optimizasyonu
+- Mobil uyumluluk
+- XML Sitemap oluşturma
+- Robots.txt konfigürasyonu
+- Canonical URL'ler
+- Open Graph meta etiketleri
+
+## 4. UI/UX Prensipleri
+
+### Tasarım Sistemi
+- Renk Paleti:
+  ```css
+  --color-primary: #F72585;     /* Ana marka rengi - Canlı pembe */
+  --color-secondary: #560BAD;   /* İkincil renk - Mor */
+  --color-tertiary: #3A0CA3;    /* Üçüncül renk - Koyu mavi */
+  --color-accent: #4361EE;      /* Vurgu rengi - Parlak mavi */
+  --color-light: #4CC9F0;       /* Açık ton - Açık mavi */
+
+  /* Gradient Kombinasyonları */
+  --gradient-primary: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  --gradient-secondary: linear-gradient(135deg, var(--color-secondary), var(--color-tertiary));
+  --gradient-accent: linear-gradient(90deg, var(--color-accent), var(--color-light));
+  --gradient-dark: linear-gradient(180deg, var(--color-tertiary), var(--color-secondary));
+  --gradient-light: linear-gradient(45deg, var(--color-light), var(--color-accent));
+  ```
+
+  Gradient Kullanım Kuralları:
+  - Section Arkaplanları:
+    - Hero section: --gradient-primary
+    - Feature section: --gradient-secondary
+    - CTA section: --gradient-accent
+    - Testimonial section: --gradient-light
+    - Footer: --gradient-dark
+  
+  - Gradient Opacity Değerleri:
+    - Arka plan gradientleri: 0.8-1.0 opacity
+    - Overlay gradientleri: 0.4-0.6 opacity
+    - Hover efektleri: 0.2-0.3 opacity
+
+### Parallax ve Scroll Efektleri
+- Section Arası Geçişler:
+  - Scroll hızı: 0.8x - 1.2x (doğal scroll hızına göre)
+  - Minimum section yüksekliği: 100vh
+  - Geçiş mesafesi: 20-30% overlap
+
+- Parallax Katmanları:
+  - Arka plan: 0.3x scroll hızı
+  - Orta katman: 0.6x scroll hızı
+  - Ön katman: 0.9x scroll hızı
+  - İçerik: 1x scroll hızı (normal)
+
+- Parallax Element Tipleri:
+  - Büyük görseller (0.4x hız)
+  - Dekoratif şekiller (0.7x hız)
+  - Text blokları (0.8x hız)
+  - İkonlar ve küçük elementler (0.5x hız)
+
+- Scroll-Triggered Animasyonlar:
+  - Fade-in efektleri
+  - Scale transformasyonları
+  - Rotasyon efektleri
+  - Slide-in animasyonları
+
+- Performans Optimizasyonları:
+  - will-change özelliği kullanımı
+  - transform: translate3d() ile GPU hızlandırma
+  - Intersection Observer API kullanımı
+  - requestAnimationFrame ile smooth scrolling
+
+### Animasyon Kuralları
+- Sayfa geçişleri
+- Scroll animasyonları
+- Hover efektleri
+- Loading states
+- Micro-interactions
+
+### Erişilebilirlik (A11y)
+- WCAG 2.1 standartlarına uyum
+- Klavye navigasyonu
+- Screen reader uyumluluğu
+- Renk kontrastı standartları
+- Alt text kullanımı
+
+## 5. Performans Hedefleri
+
+- Lighthouse skorları:
+  - Performance: 90+
+  - Accessibility: 95+
+  - Best Practices: 95+
+  - SEO: 95+
+- First Contentful Paint (FCP): < 1.8s
+- Largest Contentful Paint (LCP): < 2.5s
+- First Input Delay (FID): < 100ms
+- Cumulative Layout Shift (CLS): < 0.1
+
+## 6. Kod Yazım Standartları
+
+### Genel Kurallar
+- Component isimlendirme: PascalCase
+- Dosya isimlendirme: kebab-case
+- Değişken isimlendirme: camelCase
+- Türkçe karakter kullanılmaması
+- Her component için ayrı dosya
+
+### Component Boyut ve Organizasyon Kuralları
+- Maksimum component boyutu: 200 satır
+- Maksimum fonksiyon boyutu: 50 satır
+- Component bölme kriterleri:
+  - İş mantığına göre ayrı componentler
+  - Tekrar kullanılabilir parçalar için ayrı componentler
+  - Karmaşık form yapıları için form componentleri
+  - Liste öğeleri için ayrı list item componentleri
+  - Modal, Dialog gibi overlay elementleri için ayrı componentler
+  - Sayfa bölümleri için ayrı section componentleri
+
+### Component Bölme Stratejileri
+- Atomic Design Prensibi:
+  - Atoms: Buton, Input, Text gibi en küçük parçalar
+  - Molecules: Form grupları, Card gibi atom grupları
+  - Organisms: Header, Footer gibi kompleks yapılar
+  - Templates: Sayfa şablonları
+  - Pages: Tam sayfalar
+
+### Code Splitting Kuralları
+- Route-based splitting: Her sayfa lazy loading ile yüklenmeli
+- Component-based splitting: 
+  - Büyük formlar
+  - Modal/Dialog içerikleri
+  - Tablo/Liste componentleri
+  - Grafik/Chart componentleri
+  - Zengin medya içeren componentler
+
+### Clean Code Prensipleri
+- Tek Sorumluluk İlkesi (Single Responsibility)
+- DRY (Don't Repeat Yourself)
+- KISS (Keep It Simple, Stupid)
+- Composition over Inheritance
+- Props drilling'den kaçınma (Context API veya Redux kullanımı)
+
+### Code Review Kriterleri
+- Component boyut kontrolü
+- Fonksiyon boyut kontrolü
+- Gereksiz kod tekrarı kontrolü
+- Import sayısı kontrolü (maksimum 10-15 import)
+- Props sayısı kontrolü (maksimum 8 prop)
+
+### TypeScript Kuralları
+- Strict mode aktif
+- Interface kullanımı
+- Props için type tanımları
+- Enum kullanımı
+- Generic types
+
+### CSS/Styling Kuralları
+- BEM metodolojisi
+- CSS-in-JS için styled-components
+- Responsive design için mobile-first yaklaşım
+- CSS variable kullanımı
+- Tailwind utility class'ları
+
+
+### .htaccess Ayarları
+```apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+```
+
+### SEO Optimizasyonları
+- Prerender.io veya React Snap ile statik sayfa oluşturma
+- robots.txt ve sitemap.xml dosyalarının manuel konfigürasyonu
+- 301 yönlendirmeleri için .htaccess kuralları
+- Canonical URL'ler için manuel HTML tag'leri
+
+### Performans Optimizasyonları
+- Code splitting ve lazy loading
+- Asset optimizasyonu (resimler, fontlar, vs.)
+- CDN kullanımı
+- Service Worker implementasyonu (offline support)
+- Progressive Web App (PWA) desteği
+
+## 12. İçerik Yapısı ve Section Organizasyonu
+
+### Ana Sayfa Section Sıralaması
+1. Hero Section
+   - Dinamik gradient arka plan (--gradient-primary)
+   - Parallax efektli ana slogan
+   - 3D animasyonlu görseller
+   - CTA butonu
+
+2. Hizmet Kategorileri (3 Ana Başlık)
+   - Yazılım Hizmetleri
+   - Ajans Hizmetleri
+   - Danışmanlık Hizmetleri
+   - Her kategori için hover efektli kartlar
+   - Gradient overlay (--gradient-secondary)
+
+3. Öne Çıkan Hizmetler
+   - Grid layout ile 6 öne çıkan hizmet
+   - Her hizmet için icon animasyonu
+   - Hover durumunda detay gösterimi
+   - Parallax scroll efekti
+
+4. Hizmet Detay Bölümleri
+   - Yazılım Hizmetleri (6 alt başlık)
+     - Her hizmet için ayrı section
+     - Sağ-sol alternatif yerleşim
+     - Teknoloji ikonları
+     - Gradient arka planlar
+
+   - Ajans Hizmetleri (4 alt başlık)
+     - Portfolio showcase
+     - Video background
+     - Parallax görseller
+     - İnteraktif galeri
+
+   - Danışmanlık Hizmetleri (5 alt başlık)
+     - İnfografik gösterimler
+     - Animasyonlu istatistikler
+     - Case study örnekleri
+
+5. CTA Section
+   - Gradient arka plan (--gradient-accent)
+   - Parallax efektli görseller
+   - İletişim formu
+   - Sosyal medya bağlantıları
+
+### Section Geçiş Efektleri
+- Her ana section arası parallax scroll
+- Alt section'lar arası fade-in animasyonu
+- Scroll-triggered reveal efektleri
+- Smooth scroll navigasyon
+
+### Responsive Davranışlar
+- Mobile: Tek kolon layout
+- Tablet: 2 kolon grid
+- Desktop: 3-4 kolon grid
+- Custom breakpoint'lerde section yükseklikleri
+
+### İçerik Optimizasyonu
+- Her section için H1-H6 hiyerarşisi
+- Schema.org markup implementasyonu
+- Lazy loading görseller
+- WebP format desteği
+- Alt text optimizasyonu
+
+### Animasyon Sekansları
+- Sayfa yüklenme animasyonu
+  - Logo reveal
+  - Content fade-in
+  - Background gradient transition
+
+- Scroll-based animasyonlar
+  - Section başlık reveal
+  - İçerik fade-in
+  - Parallax katmanları
+  - Gradient opacity değişimleri
+
+- Hover Efektleri
+  - Kart hover animasyonları
+  - Button hover efektleri
+  - Link hover transitions
+  - Icon hover animasyonları
+
+### Performans Kuralları
+- Her section için ayrı code-splitting
+- Görsel optimizasyonu
+- CSS containment kullanımı
+- Intersection Observer ile lazy-loading
+- requestAnimationFrame ile smooth animations
+
+

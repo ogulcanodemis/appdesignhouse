@@ -1,0 +1,586 @@
+{
+  "hero": {
+    "title": {
+      "part1": "Modern Çözümlerle",
+      "part2": "İşinizi Büyütün"
+    },
+    "description": "Yazılım, ajans ve danışmanlık hizmetlerimizle işletmenizi dijital dünyada öne çıkarıyoruz.",
+    "buttons": {
+      "start": "Hemen Başlayın",
+      "services": "Hizmetlerimiz"
+    }
+  },
+  "about": {
+    "title": {
+      "part1": "Biz Kimiz?",
+      "part2": "Manifestomuz"
+    },
+    "manifesto": {
+      "part1": "Biz, dijital dünyayı sadece bir alan olarak görmüyoruz; onu şekillendiren, geliştiren ve dönüştüren bir ekibiz. Yenilikçi fikirleri gerçeğe dönüştürmek için buradayız. Teknolojiyi sadece kullanmakla kalmayıp, onun sınırlarını zorlamayı hedefliyoruz.",
+      "part2": "Genç, dinamik ve yaratıcı bir ekibiz. Değişen dünyaya hızla adapte oluyor, en yeni trendleri takip ediyor ve her projede fark yaratıyoruz. Geleneksel yöntemlerin dışına çıkıyor, özgün çözümler üretiyor ve markaların dijital dünyada güçlü bir yer edinmesini sağlıyoruz.",
+      "part3": "Bizim için her satır kod, her tasarım, her strateji bir anlam taşır. İşimizi sadece teknik bir süreç olarak değil, bir sanat olarak görüyoruz. Müşterilerimizin hedeflerine ulaşmasını sağlamak için her detayı titizlikle ele alıyor, projeleri yalnızca tamamlamak için değil, en iyisini ortaya koymak için geliştiriyoruz.",
+      "part4": "Dijitalleşen dünyada kalıpların dışına çıkmak isteyen herkes için buradayız. Cesur fikirler, güçlü teknolojiler ve sınırları aşan projeler için biz varız. Çünkü biz sadece bir ekip değiliz; geleceği inşa eden bir vizyonuz."
+    }
+  },
+  "services": {
+    "title": {
+      "part1": "Profesyonel",
+      "part2": "Hizmetlerimiz"
+    },
+    "description": "İşinizi büyütmek için ihtiyacınız olan tüm dijital çözümler tek çatı altında.",
+    "categories": {
+      "software": {
+        "title": "Yazılım Hizmetleri",
+        "description": "Modern ve ölçeklenebilir yazılım çözümleri ile işinizi dijitalleştirin."
+      },
+      "agency": {
+        "title": "Ajans Hizmetleri",
+        "description": "Kreatif ve etkileyici dijital pazarlama stratejileri ile markanızı öne çıkarın."
+      },
+      "consulting": {
+        "title": "Danışmanlık Hizmetleri",
+        "description": "Uzman ekibimizle işinizi analiz ediyor, en doğru stratejileri belirliyoruz."
+      }
+    },
+    "cta": "Detaylı Bilgi"
+  },
+  "featured": {
+    "title": {
+      "part1": "Öne Çıkan",
+      "part2": "Hizmetlerimiz"
+    },
+    "description": "İşinizi büyütmek için ihtiyacınız olan tüm profesyonel hizmetler.",
+    "services": {
+      "web": {
+        "title": "Web Geliştirme",
+        "description": "Modern teknolojilerle özel web uygulamaları geliştiriyoruz."
+      },
+      "mobile": {
+        "title": "Mobil Uygulama",
+        "description": "iOS ve Android için native mobil uygulamalar."
+      },
+      "uiux": {
+        "title": "UI/UX Tasarım",
+        "description": "Kullanıcı odaklı arayüz ve deneyim tasarımı."
+      },
+      "digital": {
+        "title": "Dijital Pazarlama",
+        "description": "SEO ve sosyal medya ile online varlığınızı güçlendirin."
+      },
+      "ecommerce": {
+        "title": "E-ticaret Çözümleri",
+        "description": "Online satış için özel e-ticaret platformları."
+      },
+      "consulting": {
+        "title": "İş Danışmanlığı",
+        "description": "Stratejik planlama ve büyüme danışmanlığı."
+      }
+    }
+  },
+  "cta": {
+    "title": {
+      "part1": "Projenizi",
+      "part2": "Hayata Geçirmeye",
+      "part3": "Hazır Mısınız?"
+    },
+    "description": "Hemen bizimle iletişime geçin, işinizi dijital dünyada büyütmek için size özel çözümler sunalım.",
+    "buttons": {
+      "contact": "Danışmanlık Alın",
+      "phone": {
+        "text": "+90 123 456 7890",
+        "icon": "📞"
+      }
+    }
+  },
+  "footer": {
+    "description": "Yazılım, ajans ve danışmanlık hizmetleriyle işinizi bir üst seviyeye taşıyoruz.",
+    "sections": {
+      "services": {
+        "title": "Hizmetler",
+        "links": {
+          "software": "Yazılım Hizmetleri",
+          "agency": "Ajans Hizmetleri",
+          "consulting": "Danışmanlık Hizmetleri"
+        }
+      },
+      "contact": {
+        "title": "İletişim",
+        "phone": "+90 123 456 7890",
+        "email": "info@apphousedesign.com",
+        "address": "İstanbul, Türkiye"
+      }
+    },
+    "copyright": "© {year} AppHouse Design. Tüm hakları saklıdır."
+  },
+  "aboutPage": {
+    "hero": {
+      "title": {
+        "part1": "Dijital Dünyada",
+        "part2": "İnovasyon ve Tecrübe"
+      },
+      "description": "Modern teknolojiler ve yaratıcı çözümlerle işletmenizi geleceğe taşıyoruz. Deneyimli ekibimiz ve yenilikçi yaklaşımımızla dijital dönüşüm yolculuğunuzda yanınızdayız."
+    },
+    "manifesto": {
+      "title": "Manifestomuz",
+      "items": [
+        "Biz, dijital dünyayı sadece bir alan olarak görmüyoruz; onu şekillendiren, geliştiren ve dönüştüren bir ekibiz.",
+        "Genç, dinamik ve yaratıcı bir ekibiz. Değişen dünyaya hızla adapte oluyor, en yeni trendleri takip ediyoruz.",
+        "Bizim için her satır kod, her tasarım, her strateji bir anlam taşır. İşimizi bir sanat olarak görüyoruz.",
+        "Dijitalleşen dünyada kalıpların dışına çıkmak isteyen herkes için buradayız."
+      ]
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "items": {
+        "innovation": {
+          "title": "Yenilikçilik",
+          "description": "En son teknolojileri ve trendleri takip ederek, her zaman bir adım önde olmayı hedefliyoruz."
+        },
+        "quality": {
+          "title": "Kalite",
+          "description": "Her projede en yüksek kalite standartlarını uygulayarak, mükemmeliyeti hedefliyoruz."
+        },
+        "collaboration": {
+          "title": "İşbirliği",
+          "description": "Müşterilerimizle yakın işbirliği içinde çalışarak, hedeflerine ulaşmalarına yardımcı oluyoruz."
+        },
+        "sustainability": {
+          "title": "Sürdürülebilirlik",
+          "description": "Uzun vadeli başarı için sürdürülebilir çözümler üretiyoruz."
+        }
+      }
+    },
+    "team": {
+      "title": "Ekibimiz",
+      "items": {
+        "design": {
+          "title": "Tasarım Ekibi",
+          "description": "Yaratıcı ve yenilikçi tasarımlarla markanızı öne çıkarıyoruz."
+        },
+        "development": {
+          "title": "Geliştirme Ekibi",
+          "description": "Modern teknolojilerle güçlü ve ölçeklenebilir çözümler üretiyoruz."
+        },
+        "marketing": {
+          "title": "Pazarlama Ekibi",
+          "description": "Dijital dünyada markanızın görünürlüğünü artırıyoruz."
+        },
+        "support": {
+          "title": "Destek Ekibi",
+          "description": "7/24 teknik destek ve müşteri hizmetleri sunuyoruz."
+        }
+      }
+    }
+  },
+  "stats": {
+    "items": {
+      "experience": {
+        "number": "10+",
+        "label": "Yıllık Deneyim"
+      },
+      "projects": {
+        "number": "150+",
+        "label": "Tamamlanan Proje"
+      },
+      "clients": {
+        "number": "50+",
+        "label": "Mutlu Müşteri"
+      },
+      "support": {
+        "number": "24/7",
+        "label": "Destek"
+      }
+    }
+  },
+  "servicesPage": {
+    "meta": {
+      "title": "Hizmetlerimiz - AppHouse Design",
+      "description": "Yazılım, ajans ve danışmanlık hizmetlerimiz ile işinizi dijital dünyada büyütün."
+    },
+    "hero": {
+      "title": {
+        "part1": "Profesyonel",
+        "part2": "Hizmetlerimiz"
+      },
+      "description": "Modern teknolojiler ve yaratıcı çözümlerle işinizi bir adım öne taşıyoruz"
+    },
+    "categories": {
+      "software": {
+        "title": "Yazılım Hizmetleri",
+        "description": "Modern ve ölçeklenebilir yazılım çözümleri ile işinizi dijitalleştirin.",
+        "longDescription": "En son teknolojileri kullanarak, işletmenizin ihtiyaçlarına özel yazılım çözümleri geliştiriyoruz. Web uygulamalarından mobil uygulamalara, e-ticaret platformlarından API entegrasyonlarına kadar geniş bir yelpazede hizmet sunuyoruz.",
+        "services": {
+          "web": {
+            "title": "Web Uygulamaları",
+            "description": "React, Vue.js ve Angular ile modern web uygulamaları geliştirme.",
+            "features": {
+              "spa": "SPA/PWA Uygulamalar",
+              "responsive": "Responsive Tasarım",
+              "seo": "SEO Optimizasyonu",
+              "performance": "Performans Odaklı"
+            }
+          },
+          "mobile": {
+            "title": "Mobil Uygulamalar",
+            "description": "React Native ve Flutter ile cross-platform mobil uygulama geliştirme.",
+            "features": {
+              "platforms": "iOS & Android",
+              "performance": "Native Performans",
+              "offline": "Offline Çalışma",
+              "push": "Push Bildirimler"
+            }
+          },
+          "ecommerce": {
+            "title": "E-ticaret Çözümleri",
+            "description": "WooCommerce ve Shopify ile özel e-ticaret platformları.",
+            "features": {
+              "payment": "Ödeme Entegrasyonu",
+              "inventory": "Stok Yönetimi",
+              "analytics": "Analitik Raporlar",
+              "seo": "SEO Uyumlu"
+            }
+          },
+          "api": {
+            "title": "API Geliştirme",
+            "description": "RESTful ve GraphQL API tasarımı ve implementasyonu.",
+            "features": {
+              "microservices": "Mikroservis Mimarisi",
+              "gateway": "API Gateway",
+              "cache": "Cache Yönetimi",
+              "docs": "Dokümantasyon"
+            }
+          }
+        }
+      },
+      "agency": {
+        "title": "Ajans Hizmetleri",
+        "description": "Kreatif ve etkileyici dijital pazarlama stratejileri ile markanızı öne çıkarın.",
+        "longDescription": "Markanızın dijital dünyada fark yaratması için ihtiyaç duyduğu tüm kreatif ve stratejik hizmetleri sunuyoruz. UI/UX tasarımından sosyal medya yönetimine, içerik üretiminden marka kimliği oluşturmaya kadar kapsamlı ajans hizmetleri.",
+        "services": {
+          "uiux": {
+            "title": "UI/UX Tasarım",
+            "description": "Kullanıcı odaklı arayüz ve deneyim tasarımı.",
+            "features": {
+              "wireframe": "Wireframe Tasarımı",
+              "prototype": "Prototip Geliştirme",
+              "testing": "Kullanıcı Testleri",
+              "design": "Tasarım Sistemi"
+            }
+          },
+          "digital": {
+            "title": "Dijital Pazarlama",
+            "description": "SEO, SEM ve sosyal medya yönetimi.",
+            "features": {
+              "seo": "SEO/SEM Optimizasyonu",
+              "social": "Sosyal Medya Yönetimi",
+              "content": "İçerik Pazarlama",
+              "analytics": "Performans Analizi"
+            }
+          },
+          "content": {
+            "title": "İçerik Üretimi",
+            "description": "Blog yazıları, sosyal medya içerikleri ve copywriting.",
+            "features": {
+              "blog": "Blog Yazıları",
+              "social": "Sosyal Medya İçerikleri",
+              "newsletter": "E-Bülten İçerikleri",
+              "seo": "SEO Uyumlu İçerik"
+            }
+          },
+          "brand": {
+            "title": "Marka Kimliği",
+            "description": "Logo tasarımı, kurumsal kimlik ve marka stratejisi.",
+            "features": {
+              "logo": "Logo Tasarımı",
+              "style": "Stil Rehberi",
+              "voice": "Marka Sesi",
+              "identity": "Görsel Kimlik"
+            }
+          }
+        }
+      },
+      "consulting": {
+        "title": "Danışmanlık Hizmetleri",
+        "description": "Uzman ekibimizle işletmenizin dijital dönüşümünü gerçekleştirin.",
+        "longDescription": "İşletmenizin dijital dönüşüm sürecinde ihtiyaç duyduğu stratejik danışmanlık hizmetlerini sunuyoruz. Teknoloji seçiminden proje yönetimine, iş süreçlerinin optimizasyonundan risk yönetimine kadar kapsamlı çözümler.",
+        "services": {
+          "digital": {
+            "title": "Dijital Dönüşüm",
+            "description": "İşletmenizin dijital olgunluk seviyesini artırma.",
+            "features": {
+              "analysis": "Süreç Analizi",
+              "tech": "Teknoloji Seçimi",
+              "change": "Change Management",
+              "kpi": "KPI Takibi"
+            }
+          },
+          "strategy": {
+            "title": "İş Stratejisi",
+            "description": "Pazar analizi ve büyüme stratejisi oluşturma.",
+            "features": {
+              "market": "Pazar Analizi",
+              "growth": "Büyüme Planı",
+              "competition": "Rekabet Analizi",
+              "risk": "Risk Yönetimi"
+            }
+          },
+          "project": {
+            "title": "Proje Yönetimi",
+            "description": "Agile ve Scrum metodolojileri ile proje yönetimi.",
+            "features": {
+              "agile": "Agile/Scrum",
+              "risk": "Risk Yönetimi",
+              "sprint": "Sprint Planlama",
+              "quality": "Kalite Güvence"
+            }
+          },
+          "tech": {
+            "title": "Teknoloji Danışmanlığı",
+            "description": "Teknoloji seçimi ve implementasyon danışmanlığı.",
+            "features": {
+              "stack": "Tech Stack",
+              "security": "Güvenlik",
+              "architecture": "Mimari",
+              "scalability": "Ölçeklenebilirlik"
+            }
+          }
+        }
+      }
+    }
+  },
+  "projectsPage": {
+    "meta": {
+      "title": "Projelerimiz - AppHouse Design",
+      "description": "Modern teknolojiler ve yaratıcı çözümlerle geliştirdiğimiz başarılı projelerimizi inceleyin."
+    },
+    "hero": {
+      "title": {
+        "part1": "Başarılı",
+        "part2": "Projelerimiz"
+      },
+      "description": "Her biri kendi alanında öne çıkan, modern teknolojilerle geliştirilmiş ve kullanıcı deneyimini merkeze alan projelerimizi keşfedin."
+    },
+    "projects": {
+      "petSocial": {
+        "title": "Pet Social",
+        "subtitle": "Evcil Hayvanlar İçin Sosyal Medya ve Daha Fazlası",
+        "description": "Hayvanseverleri ve evcil dostlarını bir araya getiren yenilikçi bir sosyal medya platformu.",
+        "longDescription": "Pet Social, hayvanseverleri ve evcil dostlarını bir araya getiren yenilikçi bir sosyal medya platformudur. Hayvan sahiplerinin sevimli dostları için özel olarak tasarlanmış bir topluluk oluşturarak, onların ihtiyaçlarını tek bir çatı altında topluyoruz.",
+        "features": {
+          "socialNetwork": {
+            "icon": "🌐",
+            "title": "Sosyal Ağ",
+            "description": "Fotoğraf ve video paylaşımı, etkileşim ve bilgi alışverişi imkanı."
+          },
+          "marketplace": {
+            "icon": "🛍️",
+            "title": "Pazar Yeri",
+            "description": "Mama, oyuncak, bakım ürünleri ve aksesuarlar için güvenli alışveriş platformu."
+          },
+          "vetTracking": {
+            "icon": "🏥",
+            "title": "Veteriner Takip",
+            "description": "Aşı takvimleri, sağlık kontrolleri ve tedavi süreçlerinin dijital kaydı."
+          },
+          "aiMatching": {
+            "icon": "🤖",
+            "title": "AI Eşleşme",
+            "description": "Yapay zeka destekli evcil hayvan eşleştirme sistemi."
+          }
+        },
+        "status": "Geliştirme Aşamasında",
+        "category": "Mobil Uygulama",
+        "screenshots": {
+          "feed": "Sosyal medya akış sayfası",
+          "profile": "Evcil hayvan profil sayfası",
+          "market": "Pazar yeri ana sayfası"
+        }
+      },
+      "optiFusion": {
+        "title": "OptiFusion",
+        "subtitle": "Dijital Pazarlama Optimizasyon Platformu",
+        "description": "Çoklu reklam platformu entegrasyonu ve yapay zeka destekli reklam yönetimi.",
+        "longDescription": "OptiFusion, dijital pazarlamada verimliliğinizi artıracak tek noktadan yönetim anlayışıyla geliştirildi. Farklı reklam kanalları ve HubSpot, Salesforce gibi 10 farklı CRM verilerini entegre ederek işletmelerin, pazarlama bütçelerini ve müşteri ilişkilerini uçtan uca yönetmesini sağlar.",
+        "features": {
+          "adIntegration": {
+            "icon": "📊",
+            "title": "Reklam Entegrasyonu",
+            "description": "Meta, Google, LinkedIn, TikTok Ads tek platform yönetimi."
+          },
+          "crmIntegration": {
+            "icon": "🔄",
+            "title": "CRM Entegrasyonu",
+            "description": "CRM verileri ile reklam verilerinin otomatik eşleştirilmesi."
+          },
+          "aiOptimization": {
+            "icon": "🎯",
+            "title": "AI Optimizasyon",
+            "description": "Yapay zeka destekli bütçe ve hedef kitle optimizasyonu."
+          },
+          "analytics": {
+            "icon": "📈",
+            "title": "Analitik",
+            "description": "İleri düzey analitik ve özelleştirilebilir raporlama."
+          }
+        },
+        "status": "Demo Aşamasında",
+        "category": "Web Uygulaması",
+        "screenshots": {
+          "dashboard": "Analitik dashboard",
+          "campaign": "Kampanya yönetimi",
+          "reports": "Detaylı raporlama"
+        }
+      },
+      "penGuard": {
+        "title": "PenGuard",
+        "subtitle": "Otomatize Web Penetrasyon Test Platformu",
+        "description": "Mikroservis mimarisi üzerine kurulu, kapsamlı güvenlik taramaları yapabilen modern bir penetrasyon test aracı.",
+        "longDescription": "PenGuard, web uygulamalarının güvenlik testlerini otomatize eden, mikroservis mimarisi üzerine kurulu gelişmiş bir penetrasyon test platformudur. SQL Injection, XSS, CSRF gibi yaygın güvenlik açıklarını tespit eder, detaylı raporlar oluşturur ve sürekli izleme imkanı sunar.",
+        "features": {
+          "securityScans": {
+            "icon": "🔒",
+            "title": "Güvenlik Taramaları",
+            "description": "SQL Injection, XSS, CSRF ve daha fazlası için otomatik güvenlik testleri."
+          },
+          "detailedReporting": {
+            "icon": "📋",
+            "title": "Detaylı Raporlama",
+            "description": "PDF ve HTML formatında kapsamlı güvenlik raporları ve çözüm önerileri."
+          },
+          "microservices": {
+            "icon": "🔌",
+            "title": "Mikroservis Mimarisi",
+            "description": "Gateway, Auth, Scanner ve Report servisleriyle modüler yapı."
+          },
+          "monitoring": {
+            "icon": "📊",
+            "title": "İzleme Sistemi",
+            "description": "Prometheus ve Grafana ile gerçek zamanlı metrik takibi."
+          }
+        },
+        "status": "Demo Aşamasında",
+        "category": "Güvenlik Yazılımı",
+        "screenshots": {
+          "dashboard": "Güvenlik kontrol paneli",
+          "scanResults": "Tarama sonuçları",
+          "metrics": "Metrik görselleştirmeleri"
+        }
+      }
+    },
+    "common": {
+      "screenshotsTitle": "Ekran Görüntüleri"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "İletişim - AppHouse Design",
+      "description": "AppHouse Design ile iletişime geçin. Yazılım, ajans ve danışmanlık hizmetleri için form doldurun veya direkt bize ulaşın."
+    },
+    "hero": {
+      "title": {
+        "part1": "Bizimle",
+        "part2": "İletişime Geçin"
+      },
+      "description": "Size özel dijital çözümler için bizimle iletişime geçebilirsiniz. Projelerinizi hayata geçirmek için buradayız.",
+      "form": {
+        "title": "İletişim Formu",
+        "name": {
+          "label": "İsim Soyisim",
+          "placeholder": "İsminizi giriniz",
+          "error": {
+            "required": "İsim alanı zorunludur",
+            "min": "İsim en az 2 karakter olmalıdır",
+            "max": "İsim en fazla 50 karakter olabilir",
+            "invalid": "İsim sadece harf içerebilir"
+          }
+        },
+        "email": {
+          "label": "E-posta",
+          "placeholder": "E-posta adresinizi giriniz",
+          "error": {
+            "required": "E-posta alanı zorunludur",
+            "invalid": "Geçerli bir e-posta adresi giriniz",
+            "max": "E-posta en fazla 100 karakter olabilir"
+          }
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "Telefon numaranızı giriniz",
+          "error": {
+            "invalid": "Sadece rakam giriniz",
+            "min": "En az 10 rakam giriniz",
+            "max": "En fazla 11 rakam giriniz"
+          }
+        },
+        "subject": {
+          "label": "Konu",
+          "placeholder": "Mesajınızın konusunu giriniz",
+          "error": {
+            "required": "Konu alanı zorunludur",
+            "min": "Konu en az 2 karakter olmalıdır",
+            "max": "Konu en fazla 100 karakter olabilir"
+          }
+        },
+        "message": {
+          "label": "Mesaj",
+          "placeholder": "Mesajınızı giriniz",
+          "error": {
+            "required": "Mesaj alanı zorunludur",
+            "min": "En az 10 karakter giriniz",
+            "max": "En fazla 1000 karakter girebilirsiniz"
+          }
+        },
+        "file": {
+          "label": "Dosya Ekle (Opsiyonel - Maksimum 5MB)",
+          "placeholder": "Dosya seçmek için tıklayın veya sürükleyin",
+          "uploading": "Dosya yükleniyor...",
+          "selected": "Dosya Seçildi",
+          "allowedTypes": "İzin verilen dosya türleri:",
+          "error": {
+            "size": "Dosya boyutu 5MB'dan küçük olmalıdır",
+            "type": "Sadece PDF, DOC, DOCX ve TXT dosyaları yükleyebilirsiniz"
+          }
+        },
+        "submit": {
+          "label": "Gönder",
+          "sending": "Gönderiliyor..."
+        }
+      }
+    },
+    "notifications": {
+      "success": "Mesajınız başarıyla gönderildi!",
+      "error": "Mesajınız gönderilemedi. Lütfen daha sonra tekrar deneyiniz.",
+      "rateLimit": "Lütfen 30 saniye bekleyip tekrar deneyiniz."
+    },
+    "info": {
+      "title": "Bizimle İletişime Geçin",
+      "description": "Projeleriniz için en iyi çözümleri sunmak için buradayız. Size nasıl yardımcı olabileceğimizi öğrenmek için hemen iletişime geçin.",
+      "address": {
+        "title": "Adres",
+        "content": "İstanbul, Türkiye"
+      },
+      "phone": {
+        "title": "Telefon",
+        "content": "+90 123 456 7890"
+      },
+      "email": {
+        "title": "E-posta",
+        "content": "info@apphousedesign.com"
+      }
+    },
+    "social": {
+      "title": "Sosyal Medya",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "github": "GitHub"
+    }
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  }
+} 

@@ -1,0 +1,586 @@
+{
+  "hero": {
+    "title": {
+      "part1": "With Modern Solutions",
+      "part2": "Grow Your Business"
+    },
+    "description": "We make your business stand out in the digital world with our software, agency, and consulting services.",
+    "buttons": {
+      "start": "Get Started",
+      "services": "Our Services"
+    }
+  },
+  "about": {
+    "title": {
+      "part1": "Who Are We?",
+      "part2": "Our Manifesto"
+    },
+    "manifesto": {
+      "part1": "We don't just see the digital world as a space; we are a team that shapes, develops, and transforms it. We are here to turn innovative ideas into reality. We don't just use technology; we aim to push its boundaries.",
+      "part2": "We are a young, dynamic, and creative team. We quickly adapt to the changing world, follow the latest trends, and make a difference in every project. We think outside the box, produce original solutions, and help brands establish a strong presence in the digital world.",
+      "part3": "For us, every line of code, every design, every strategy carries meaning. We see our work not just as a technical process, but as an art. We meticulously handle every detail to help our clients achieve their goals, developing projects not just to complete them, but to deliver the best.",
+      "part4": "We are here for everyone who wants to break the mold in the digitalizing world. We exist for bold ideas, powerful technologies, and projects that transcend boundaries. Because we are not just a team; we are a vision building the future."
+    }
+  },
+  "services": {
+    "title": {
+      "part1": "Professional",
+      "part2": "Services"
+    },
+    "description": "All the digital solutions you need to grow your business under one roof.",
+    "categories": {
+      "software": {
+        "title": "Software Services",
+        "description": "Digitize your business with modern and scalable software solutions."
+      },
+      "agency": {
+        "title": "Agency Services",
+        "description": "Make your brand stand out with creative and impactful digital marketing strategies."
+      },
+      "consulting": {
+        "title": "Consulting Services",
+        "description": "Our expert team analyzes your business and determines the most effective strategies."
+      }
+    },
+    "cta": "Learn More"
+  },
+  "featured": {
+    "title": {
+      "part1": "Featured",
+      "part2": "Services"
+    },
+    "description": "All the professional services you need to grow your business.",
+    "services": {
+      "web": {
+        "title": "Web Development",
+        "description": "We develop custom web applications with modern technologies."
+      },
+      "mobile": {
+        "title": "Mobile App",
+        "description": "Native mobile applications for iOS and Android."
+      },
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "User-focused interface and experience design."
+      },
+      "digital": {
+        "title": "Digital Marketing",
+        "description": "Strengthen your online presence with SEO and social media."
+      },
+      "ecommerce": {
+        "title": "E-commerce Solutions",
+        "description": "Custom e-commerce platforms for online sales."
+      },
+      "consulting": {
+        "title": "Business Consulting",
+        "description": "Strategic planning and growth consulting."
+      }
+    }
+  },
+  "cta": {
+    "title": {
+      "part1": "Ready to",
+      "part2": "Bring Your Project",
+      "part3": "to Life?"
+    },
+    "description": "Get in touch with us now, and let us provide you with custom solutions to grow your business in the digital world.",
+    "buttons": {
+      "contact": "Get Consultation",
+      "phone": {
+        "text": "+90 123 456 7890",
+        "icon": "📞"
+      }
+    }
+  },
+  "footer": {
+    "description": "We take your business to the next level with software, agency, and consulting services.",
+    "sections": {
+      "services": {
+        "title": "Services",
+        "links": {
+          "software": "Software Services",
+          "agency": "Agency Services",
+          "consulting": "Consulting Services"
+        }
+      },
+      "contact": {
+        "title": "Contact",
+        "phone": "+90 123 456 7890",
+        "email": "info@apphousedesign.com",
+        "address": "Istanbul, Turkey"
+      }
+    },
+    "copyright": "© {year} AppHouse Design. All rights reserved."
+  },
+  "aboutPage": {
+    "hero": {
+      "title": {
+        "part1": "Innovation and Experience",
+        "part2": "in the Digital World"
+      },
+      "description": "We carry your business into the future with modern technologies and creative solutions. We are by your side in your digital transformation journey with our experienced team and innovative approach."
+    },
+    "manifesto": {
+      "title": "Our Manifesto",
+      "items": [
+        "We don't just see the digital world as a space; we are a team that shapes, develops, and transforms it.",
+        "We are a young, dynamic, and creative team. We quickly adapt to the changing world and follow the latest trends.",
+        "For us, every line of code, every design, every strategy carries meaning. We see our work as an art.",
+        "We are here for everyone who wants to break the mold in the digitalizing world."
+      ]
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "innovation": {
+          "title": "Innovation",
+          "description": "We aim to stay one step ahead by following the latest technologies and trends."
+        },
+        "quality": {
+          "title": "Quality",
+          "description": "We strive for excellence by implementing the highest quality standards in every project."
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "description": "We work closely with our clients to help them achieve their goals."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "We create sustainable solutions for long-term success."
+        }
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "items": {
+        "design": {
+          "title": "Design Team",
+          "description": "We make your brand stand out with creative and innovative designs."
+        },
+        "development": {
+          "title": "Development Team",
+          "description": "We create powerful and scalable solutions with modern technologies."
+        },
+        "marketing": {
+          "title": "Marketing Team",
+          "description": "We increase your brand's visibility in the digital world."
+        },
+        "support": {
+          "title": "Support Team",
+          "description": "We provide 24/7 technical support and customer service."
+        }
+      }
+    }
+  },
+  "stats": {
+    "items": {
+      "experience": {
+        "number": "10+",
+        "label": "Years of Experience"
+      },
+      "projects": {
+        "number": "150+",
+        "label": "Completed Projects"
+      },
+      "clients": {
+        "number": "50+",
+        "label": "Happy Clients"
+      },
+      "support": {
+        "number": "24/7",
+        "label": "Support"
+      }
+    }
+  },
+  "servicesPage": {
+    "meta": {
+      "title": "Our Services - AppHouse Design",
+      "description": "Grow your business in the digital world with our software, agency, and consulting services."
+    },
+    "hero": {
+      "title": {
+        "part1": "Professional",
+        "part2": "Services"
+      },
+      "description": "We take your business one step forward with modern technologies and creative solutions"
+    },
+    "categories": {
+      "software": {
+        "title": "Software Services",
+        "description": "Digitize your business with modern and scalable software solutions.",
+        "longDescription": "Using the latest technologies, we develop custom software solutions tailored to your business needs. We offer a wide range of services from web applications to mobile apps, from e-commerce platforms to API integrations.",
+        "services": {
+          "web": {
+            "title": "Web Applications",
+            "description": "Developing modern web applications with React, Vue.js, and Angular.",
+            "features": {
+              "spa": "SPA/PWA Applications",
+              "responsive": "Responsive Design",
+              "seo": "SEO Optimization",
+              "performance": "Performance Focused"
+            }
+          },
+          "mobile": {
+            "title": "Mobile Applications",
+            "description": "Cross-platform mobile app development with React Native and Flutter.",
+            "features": {
+              "platforms": "iOS & Android",
+              "performance": "Native Performance",
+              "offline": "Offline Mode",
+              "push": "Push Notifications"
+            }
+          },
+          "ecommerce": {
+            "title": "E-commerce Solutions",
+            "description": "Custom e-commerce platforms with WooCommerce and Shopify.",
+            "features": {
+              "payment": "Payment Integration",
+              "inventory": "Inventory Management",
+              "analytics": "Analytics Reports",
+              "seo": "SEO Friendly"
+            }
+          },
+          "api": {
+            "title": "API Development",
+            "description": "RESTful and GraphQL API design and implementation.",
+            "features": {
+              "microservices": "Microservice Architecture",
+              "gateway": "API Gateway",
+              "cache": "Cache Management",
+              "docs": "Documentation"
+            }
+          }
+        }
+      },
+      "agency": {
+        "title": "Agency Services",
+        "description": "Make your brand stand out with creative and impactful digital marketing strategies.",
+        "longDescription": "We provide all the creative and strategic services your brand needs to make a difference in the digital world. Comprehensive agency services from UI/UX design to social media management, content creation to brand identity development.",
+        "services": {
+          "uiux": {
+            "title": "UI/UX Design",
+            "description": "User-focused interface and experience design.",
+            "features": {
+              "wireframe": "Wireframe Design",
+              "prototype": "Prototype Development",
+              "testing": "User Testing",
+              "design": "Design System"
+            }
+          },
+          "digital": {
+            "title": "Digital Marketing",
+            "description": "SEO, SEM and social media management.",
+            "features": {
+              "seo": "SEO/SEM Optimization",
+              "social": "Social Media Management",
+              "content": "Content Marketing",
+              "analytics": "Performance Analysis"
+            }
+          },
+          "content": {
+            "title": "Content Creation",
+            "description": "Blog posts, social media content, and copywriting.",
+            "features": {
+              "blog": "Blog Articles",
+              "social": "Social Media Content",
+              "newsletter": "Newsletter Content",
+              "seo": "SEO Optimized Content"
+            }
+          },
+          "brand": {
+            "title": "Brand Identity",
+            "description": "Logo design, corporate identity, and brand strategy.",
+            "features": {
+              "logo": "Logo Design",
+              "style": "Style Guide",
+              "voice": "Brand Voice",
+              "identity": "Visual Identity"
+            }
+          }
+        }
+      },
+      "consulting": {
+        "title": "Consulting Services",
+        "description": "Transform your business digitally with our expert team.",
+        "longDescription": "We provide strategic consulting services that your business needs in its digital transformation journey. Comprehensive solutions from technology selection to project management, from business process optimization to risk management.",
+        "services": {
+          "digital": {
+            "title": "Digital Transformation",
+            "description": "Increase your business's digital maturity level.",
+            "features": {
+              "analysis": "Process Analysis",
+              "tech": "Technology Selection",
+              "change": "Change Management",
+              "kpi": "KPI Tracking"
+            }
+          },
+          "strategy": {
+            "title": "Business Strategy",
+            "description": "Market analysis and growth strategy development.",
+            "features": {
+              "market": "Market Analysis",
+              "growth": "Growth Planning",
+              "competition": "Competition Analysis",
+              "risk": "Risk Management"
+            }
+          },
+          "project": {
+            "title": "Project Management",
+            "description": "Project management with Agile and Scrum methodologies.",
+            "features": {
+              "agile": "Agile/Scrum",
+              "risk": "Risk Management",
+              "sprint": "Sprint Planning",
+              "quality": "Quality Assurance"
+            }
+          },
+          "tech": {
+            "title": "Technology Consulting",
+            "description": "Technology selection and implementation consulting.",
+            "features": {
+              "stack": "Tech Stack",
+              "security": "Security",
+              "architecture": "Architecture",
+              "scalability": "Scalability"
+            }
+          }
+        }
+      }
+    }
+  },
+  "projectsPage": {
+    "meta": {
+      "title": "Our Projects - AppHouse Design",
+      "description": "Explore our successful projects developed with modern technologies and creative solutions."
+    },
+    "hero": {
+      "title": {
+        "part1": "Our Successful",
+        "part2": "Projects"
+      },
+      "description": "Discover our projects that stand out in their respective fields, developed with modern technologies and centered around user experience."
+    },
+    "projects": {
+      "petSocial": {
+        "title": "Pet Social",
+        "subtitle": "Social Media and More for Pets",
+        "description": "An innovative social media platform that brings pet lovers and their furry friends together.",
+        "longDescription": "Pet Social is an innovative social media platform that brings pet lovers and their furry friends together. By creating a community specially designed for pet owners' lovely companions, we gather all their needs under one roof.",
+        "features": {
+          "socialNetwork": {
+            "icon": "🌐",
+            "title": "Social Network",
+            "description": "Photo and video sharing, interaction, and information exchange capability."
+          },
+          "marketplace": {
+            "icon": "🛍️",
+            "title": "Marketplace",
+            "description": "Secure shopping platform for food, toys, care products, and accessories."
+          },
+          "vetTracking": {
+            "icon": "🏥",
+            "title": "Veterinary Tracking",
+            "description": "Digital record of vaccination schedules, health checks, and treatment processes."
+          },
+          "aiMatching": {
+            "icon": "🤖",
+            "title": "AI Matching",
+            "description": "AI-powered pet matching system."
+          }
+        },
+        "status": "In Development",
+        "category": "Mobile Application",
+        "screenshots": {
+          "feed": "Social media feed page",
+          "profile": "Pet profile page",
+          "market": "Marketplace main page"
+        }
+      },
+      "optiFusion": {
+        "title": "OptiFusion",
+        "subtitle": "Digital Marketing Optimization Platform",
+        "description": "Multi-platform advertising integration and AI-powered advertising management.",
+        "longDescription": "OptiFusion was developed with a single-point management approach to increase your efficiency in digital marketing. By integrating different advertising channels and 10 different CRM data including HubSpot and Salesforce, it enables businesses to manage their marketing budgets and customer relationships end-to-end.",
+        "features": {
+          "adIntegration": {
+            "icon": "📊",
+            "title": "Ad Integration",
+            "description": "Single platform management for Meta, Google, LinkedIn, TikTok Ads."
+          },
+          "crmIntegration": {
+            "icon": "🔄",
+            "title": "CRM Integration",
+            "description": "Automatic matching of CRM data with advertising data."
+          },
+          "aiOptimization": {
+            "icon": "🎯",
+            "title": "AI Optimization",
+            "description": "AI-powered budget and target audience optimization."
+          },
+          "analytics": {
+            "icon": "📈",
+            "title": "Analytics",
+            "description": "Advanced analytics and customizable reporting."
+          }
+        },
+        "status": "In Demo Phase",
+        "category": "Web Application",
+        "screenshots": {
+          "dashboard": "Analytics dashboard",
+          "campaign": "Campaign management",
+          "reports": "Detailed reporting"
+        }
+      },
+      "penGuard": {
+        "title": "PenGuard",
+        "subtitle": "Automated Web Penetration Testing Platform",
+        "description": "A modern penetration testing tool built on microservices architecture, capable of comprehensive security scans.",
+        "longDescription": "PenGuard is an advanced penetration testing platform built on microservices architecture that automates web application security testing. It detects common security vulnerabilities like SQL Injection, XSS, CSRF, generates detailed reports, and provides continuous monitoring capabilities.",
+        "features": {
+          "securityScans": {
+            "icon": "🔒",
+            "title": "Security Scans",
+            "description": "Automated security tests for SQL Injection, XSS, CSRF, and more."
+          },
+          "detailedReporting": {
+            "icon": "📋",
+            "title": "Detailed Reporting",
+            "description": "Comprehensive security reports and solution recommendations in PDF and HTML formats."
+          },
+          "microservices": {
+            "icon": "🔌",
+            "title": "Microservices Architecture",
+            "description": "Modular structure with Gateway, Auth, Scanner, and Report services."
+          },
+          "monitoring": {
+            "icon": "📊",
+            "title": "Monitoring System",
+            "description": "Real-time metric tracking with Prometheus and Grafana."
+          }
+        },
+        "status": "In Demo Phase",
+        "category": "Security Software",
+        "screenshots": {
+          "dashboard": "Security control panel",
+          "scanResults": "Scan results",
+          "metrics": "Metrics visualizations"
+        }
+      }
+    },
+    "common": {
+      "screenshotsTitle": "Screenshots"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact - AppHouse Design",
+      "description": "Get in touch with AppHouse Design. Fill out the form or contact us directly for software, agency, and consulting services."
+    },
+    "hero": {
+      "title": {
+        "part1": "Get in",
+        "part2": "Touch"
+      },
+      "description": "You can contact us for custom digital solutions. We are here to bring your projects to life.",
+      "form": {
+        "title": "Contact Form",
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your name",
+          "error": {
+            "required": "Name is required",
+            "min": "Name must be at least 2 characters",
+            "max": "Name cannot exceed 50 characters",
+            "invalid": "Name can only contain letters"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email address",
+          "error": {
+            "required": "Email is required",
+            "invalid": "Please enter a valid email address",
+            "max": "Email cannot exceed 100 characters"
+          }
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter your phone number",
+          "error": {
+            "invalid": "Please enter only numbers",
+            "min": "Enter at least 10 digits",
+            "max": "Enter at most 11 digits"
+          }
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Enter your message subject",
+          "error": {
+            "required": "Subject is required",
+            "min": "Subject must be at least 2 characters",
+            "max": "Subject cannot exceed 100 characters"
+          }
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Enter your message",
+          "error": {
+            "required": "Message is required",
+            "min": "Enter at least 10 characters",
+            "max": "You can enter up to 1000 characters"
+          }
+        },
+        "file": {
+          "label": "Attach File (Optional - Maximum 5MB)",
+          "placeholder": "Click or drag to select a file",
+          "uploading": "Uploading file...",
+          "selected": "File Selected",
+          "allowedTypes": "Allowed file types:",
+          "error": {
+            "size": "File size must be less than 5MB",
+            "type": "Only PDF, DOC, DOCX and TXT files are allowed"
+          }
+        },
+        "submit": {
+          "default": "Send Message",
+          "sending": "Sending..."
+        }
+      }
+    },
+    "info": {
+      "title": "Get in Touch",
+      "description": "We are here to provide the best solutions for your projects. Contact us now to learn how we can help you.",
+      "address": {
+        "title": "Address",
+        "content": "Istanbul, Turkey"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "+90 123 456 7890"
+      },
+      "email": {
+        "title": "Email",
+        "content": "info@apphousedesign.com"
+      }
+    },
+    "social": {
+      "title": "Social Media",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "github": "GitHub"
+    },
+    "notifications": {
+      "success": "Your message has been sent successfully!",
+      "error": "Failed to send your message. Please try again later.",
+      "rateLimit": "Please wait 30 seconds before trying again."
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+} 

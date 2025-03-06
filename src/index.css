@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #F72585;
+  --color-secondary: #560BAD;
+  --color-tertiary: #3A0CA3;
+  --color-accent: #4361EE;
+  --color-light: #4CC9F0;
+
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  color: #213547;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .section {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90 focus:ring-primary/50;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary/90 focus:ring-secondary/50;
+  }
+
+  .heading-1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:-z-10 before:p-[2px] before:bg-gradient-to-r before:from-primary before:to-accent before:rounded-lg before:content-[''];
+  }
+
+  .animated-gradient-bg {
+    @apply relative overflow-hidden;
+  }
+
+  .animated-gradient-bg::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20;
+    animation: gradient-animation 8s linear infinite;
+  }
+}
+
+/* Parallax ve Scroll Efektleri için Utility Sınıfları */
+@layer utilities {
+  .parallax {
+    @apply will-change-transform;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .parallax-slow {
+    transform: translate3d(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .parallax-medium {
+    transform: translate3d(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.4, 0.6, 0.4, 1);
+  }
+
+  .parallax-fast {
+    transform: translate3d(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.6, 0.4, 0.6, 1);
+  }
+
+  .scroll-gradient {
+    @apply relative;
+  }
+
+  .scroll-gradient::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-b from-transparent to-white/80 opacity-0 transition-opacity duration-300;
+  }
+
+  .scroll-gradient.visible::after {
+    @apply opacity-100;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
