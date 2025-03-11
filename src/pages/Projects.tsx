@@ -3,11 +3,31 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+// OptiFusion resimleri
+import mockup1 from '../assets/img/projects/optifusion/mockup-1.png';
+import mockup2 from '../assets/img/projects/optifusion/mockup-2.png';
+import mockup3 from '../assets/img/projects/optifusion/mockup-3.png';
+//Travel Taste resimleri
+import traveltaste1 from '../assets/img/projects/traveltaste/mockup-1.png';
+import traveltaste2 from '../assets/img/projects/traveltaste/mockup-2.png';
+import traveltaste3 from '../assets/img/projects/traveltaste/mockup-3.png';
+import optifusionLogo from '../assets/img/projects/optifusion/optifusion@4x.png';
+import petsocialLogo from '../assets/img/projects/petsocial/petsocial@4x.png';
+import traveltasteLogo from '../assets/img/projects/traveltaste/traveltaste-logo@4x.png';
+import airyLogo from '../assets/img/projects/airy/airy-logo@4x.png';
+import airy1 from '../assets/img/projects/airy/mockup-1.png';
+import airy2 from '../assets/img/projects/airy/mockup2.png';
+import airy3 from '../assets/img/projects/airy/mockup-3.png';
+import penguardLogo from '../assets/img/projects/penguard/penguard.png';
+import penguard1 from '../assets/img/projects/penguard/mock-1.png';
+import penguard2 from '../assets/img/projects/penguard/mock-2.png';
+import penguard3 from '../assets/img/projects/penguard/mock-3.png';
+
 const projects = [
   {
     id: 'petSocial',
     gradient: 'from-primary to-accent',
-    image: '/images/projects/pet-social.jpg',
+    image: petsocialLogo,
     technologies: ['React Native', 'Node.js', 'MongoDB', 'AI/ML'],
     startDate: '2024-01',
     category: 'mobile',
@@ -33,54 +53,106 @@ const projects = [
   {
     id: 'optiFusion',
     gradient: 'from-secondary to-tertiary',
-    image: '/images/projects/optifusion.jpg',
+    image: optifusionLogo,
     technologies: ['React', 'Python', 'TensorFlow', 'AWS'],
     startDate: '2023-09',
     category: 'web',
     screenshots: [
       {
-        thumbnail: 'https://placehold.co/600x400/3A0CA3/FFFFFF/webp?text=Analytics+Dashboard',
-        fullsize: 'https://placehold.co/1200x800/3A0CA3/FFFFFF/webp?text=Analytics+Dashboard',
+        thumbnail: mockup1,
+        fullsize: mockup1,
         key: 'dashboard'
       },
       {
-        thumbnail: 'https://placehold.co/600x400/4CC9F0/FFFFFF/webp?text=Campaign+Manager',
-        fullsize: 'https://placehold.co/1200x800/4CC9F0/FFFFFF/webp?text=Campaign+Manager',
+        thumbnail: mockup2,
+        fullsize: mockup2,
         key: 'campaign'
       },
       {
-        thumbnail: 'https://placehold.co/600x400/F72585/FFFFFF/webp?text=Reports',
-        fullsize: 'https://placehold.co/1200x800/F72585/FFFFFF/webp?text=Reports',
+        thumbnail: mockup3,
+        fullsize: mockup3,
         key: 'reports'
       }
     ],
     features: ['adIntegration', 'crmIntegration', 'aiOptimization', 'analytics']
   },
   {
+    id: 'travelTaste',
+    gradient: 'from-secondary to-tertiary',
+    image: traveltasteLogo,
+    technologies: ['React Native', 'Typscript', 'Expo', 'Firebase'],
+    startDate: '2023-09',
+    category: 'web',
+    screenshots: [
+      {
+        thumbnail: traveltaste1,
+        fullsize: traveltaste1,
+        key: 'dashboard'
+      },
+      {
+        thumbnail: traveltaste2,
+        fullsize: traveltaste2,
+        key: 'campaign'
+      },
+      {
+        thumbnail: traveltaste3,
+        fullsize: traveltaste3,
+        key: 'reports'
+      }
+    ],
+    features: ['routePlanning', 'realTimeData', 'customization', 'offlineAccess']
+  },
+  {
     id: 'penGuard',
     gradient: 'from-tertiary to-light',
-    image: '/images/projects/penguard.jpg',
-    technologies: ['Java', 'Spring Boot', 'Spring Cloud', 'PostgreSQL', 'Docker', 'Kafka'],
+    image: penguardLogo,
+    technologies: ['Java', 'Spring Boot', 'Spring Cloud', 'Eureka','zookeeper','alertmanager','PostgreSQL','mongoDB', 'Docker', 'Kafka', 'Prometheus', 'Grafana','angular'],
     startDate: '2024-02',
     category: 'web',
     screenshots: [
       {
-        thumbnail: 'https://placehold.co/600x400/3A0CA3/FFFFFF/webp?text=Security+Dashboard',
-        fullsize: 'https://placehold.co/1200x800/3A0CA3/FFFFFF/webp?text=Security+Dashboard',
+        thumbnail: penguard1,
+        fullsize: penguard1,
         key: 'dashboard'
       },
       {
-        thumbnail: 'https://placehold.co/600x400/4361EE/FFFFFF/webp?text=Scan+Results',
-        fullsize: 'https://placehold.co/1200x800/4361EE/FFFFFF/webp?text=Scan+Results',
+        thumbnail: penguard2,
+        fullsize: penguard2,
         key: 'scanResults'
       },
       {
-        thumbnail: 'https://placehold.co/600x400/4CC9F0/FFFFFF/webp?text=Metrics',
-        fullsize: 'https://placehold.co/1200x800/4CC9F0/FFFFFF/webp?text=Metrics',
+        thumbnail: penguard3,
+        fullsize: penguard3,
         key: 'metrics'
       }
     ],
     features: ['securityScans', 'detailedReporting', 'microservices', 'monitoring']
+  },
+  {
+    id: 'airy',
+    gradient: 'from-primary to-accent',
+    image: airyLogo,
+    technologies: ['Flutter', 'Dart', 'Firebase', 'Google Maps API'],
+    startDate: '2024-03',
+    category: 'mobile',
+    screenshots: [
+      {
+        thumbnail: airy1,
+        fullsize: airy1,
+        key: 'dashboard'
+      },
+      {
+        thumbnail: airy2,
+        fullsize: airy2,
+        key: 'map'
+      },
+      {
+        thumbnail: airy3,
+        fullsize: airy3,
+        key: 'history'
+      }
+    ],
+    features: ['realTimeMonitoring', 'locationBased', 'notifications', 'offlineSupport']
   }
 ];
 
@@ -382,11 +454,34 @@ const Projects = () => {
                           viewport={{ once: true }}
                           transition={{ duration: 0.5 }}
                         >
-                          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                          {(project.id === 'optiFusion' || project.id === 'petSocial' || 
+                            project.id === 'penGuard' || project.id === 'travelTaste' || 
+                            project.id === 'airy') && (
+                            <motion.div
+                              className="mb-6"
+                              initial={{ opacity: 0, scale: 0.8 }}
+                              whileInView={{ opacity: 1, scale: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5 }}
+                            >
+                              <img 
+                                src={
+                                  project.id === 'optiFusion' ? optifusionLogo : 
+                                  project.id === 'petSocial' ? petsocialLogo :
+                                  project.id === 'travelTaste' ? traveltasteLogo :
+                                  project.id === 'airy' ? airyLogo :
+                                  penguardLogo
+                                } 
+                                alt={`${project.id} Logo`}
+                                className="h-16 w-auto object-contain"
+                              />
+                            </motion.div>
+                          )}
+                          {/* <h2 className="text-3xl md:text-4xl font-bold mb-4">
                             <span className={`gradient-text bg-gradient-to-r ${project.gradient}`} itemProp="name">
                               {t(`projectsPage.projects.${project.id}.title`)}
                             </span>
-                          </h2>
+                          </h2> */}
                           <h3 className="text-xl text-gray-700 mb-4">
                             {t(`projectsPage.projects.${project.id}.subtitle`)}
                           </h3>

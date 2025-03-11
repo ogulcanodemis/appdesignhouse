@@ -87,7 +87,7 @@
     "buttons": {
       "contact": "Get Consultation",
       "phone": {
-        "text": "+90 123 456 7890",
+        "text": "+90 543 646 15 02",
         "icon": "📞"
       }
     }
@@ -105,7 +105,7 @@
       },
       "contact": {
         "title": "Contact",
-        "phone": "+90 123 456 7890",
+        "phone": "+90 543 646 15 02",
         "email": "info@apphousedesign.com",
         "address": "Istanbul, Turkey"
       }
@@ -431,11 +431,51 @@
           "reports": "Detailed reporting"
         }
       },
+      "travelTaste": {
+        "title": "TravelTaste",
+        "subtitle": "Smart Travel Planning Assistant",
+        "description": "A mobile application powered by real-time data that creates personalized travel routes based on your budget and preferences.",
+        "longDescription": "TravelTaste is an innovative mobile application that helps users plan travel routes according to their budget and preferences. Powered by real-time data from Google Places API, the app offers personalized travel experiences and creates the most suitable routes based on user preferences.",
+        "features": {
+          "routePlanning": {
+            "icon": "🗺️",
+            "title": "Smart Route Planning",
+            "description": "Create personalized travel routes based on budget and preferences."
+          },
+          "realTimeData": {
+            "icon": "🔄",
+            "title": "Real-Time Data",
+            "description": "Up-to-date location and venue information with Google Places API."
+          },
+          "customization": {
+            "icon": "⚙️",
+            "title": "Customization",
+            "description": "Personal preferences in categories like food, culture, nature, and entertainment."
+          },
+          "offlineAccess": {
+            "icon": "📱",
+            "title": "Offline Access",
+            "description": "Access to basic features without an internet connection."
+          }
+        },
+        "status": "Beta Phase",
+        "category": "Mobile Application",
+        "screenshots": {
+          "dashboard": "Main screen and route planning",
+          "campaign": "Hotel and activity selection",
+          "reports": "Route details and map view"
+        },
+        "techStack": {
+          "frontend": ["React Native", "TypeScript", "Redux", "Expo"],
+          "backend": ["Firebase", "Google Cloud Platform"],
+          "apis": ["Google Places API", "OpenWeatherMap", "ExchangeRate-API"]
+        }
+      },
       "penGuard": {
         "title": "PenGuard",
         "subtitle": "Automated Web Penetration Testing Platform",
-        "description": "A modern penetration testing tool built on microservices architecture, capable of comprehensive security scans.",
-        "longDescription": "PenGuard is an advanced penetration testing platform built on microservices architecture that automates web application security testing. It detects common security vulnerabilities like SQL Injection, XSS, CSRF, generates detailed reports, and provides continuous monitoring capabilities.",
+        "description": "A modern penetration testing tool built on microservice architecture capable of comprehensive security scans.",
+        "longDescription": "PenGuard is an advanced penetration testing platform built on microservice architecture that automates web application security tests. It detects common security vulnerabilities like SQL Injection, XSS, CSRF, generates detailed reports, and provides continuous monitoring capabilities.",
         "features": {
           "securityScans": {
             "icon": "🔒",
@@ -449,7 +489,7 @@
           },
           "microservices": {
             "icon": "🔌",
-            "title": "Microservices Architecture",
+            "title": "Microservice Architecture",
             "description": "Modular structure with Gateway, Auth, Scanner, and Report services."
           },
           "monitoring": {
@@ -458,12 +498,53 @@
             "description": "Real-time metric tracking with Prometheus and Grafana."
           }
         },
-        "status": "In Demo Phase",
+        "status": "Demo Phase",
         "category": "Security Software",
         "screenshots": {
           "dashboard": "Security control panel",
           "scanResults": "Scan results",
-          "metrics": "Metrics visualizations"
+          "metrics": "Metric visualizations"
+        }
+      },
+      "airy": {
+        "title": "Airy",
+        "subtitle": "Smart Air Quality Monitoring System",
+        "description": "A comprehensive mobile application that tracks, analyzes real-time air quality data and informs users.",
+        "longDescription": "Airy is an innovative mobile application that monitors air quality data in real-time and informs users about potential health risks. With GPS integration and advanced mapping features, you can view detailed air quality in your area, analyze historical data, and receive instant notifications in critical situations.",
+        "features": {
+          "realTimeMonitoring": {
+            "icon": "📡",
+            "title": "Real-Time Monitoring",
+            "description": "Instant tracking of pollutants like PM2.5, PM10, CO, NO2, SO2, O3."
+          },
+          "locationBased": {
+            "icon": "📍",
+            "title": "Location Based",
+            "description": "Air quality analysis of your area with GPS integration."
+          },
+          "notifications": {
+            "icon": "🔔",
+            "title": "Smart Notifications",
+            "description": "Instant push notifications for critical air quality levels."
+          },
+          "offlineSupport": {
+            "icon": "🌐",
+            "title": "Offline Access",
+            "description": "Access to latest data without an internet connection."
+          }
+        },
+        "status": "Demo Phase",
+        "category": "Mobile Application",
+        "screenshots": {
+          "dashboard": "Main screen and air quality indicators",
+          "map": "Pollution levels on map",
+          "history": "Historical data and analysis"
+        },
+        "techStack": {
+          "frontend": ["Flutter", "Dart"],
+          "backend": ["Firebase", "RESTful API"],
+          "apis": ["Google Maps API", "OpenWeather API", "Firebase Cloud Messaging"],
+          "storage": ["Hive", "SharedPreferences"]
         }
       }
     },
@@ -556,7 +637,7 @@
       },
       "phone": {
         "title": "Phone",
-        "content": "+90 123 456 7890"
+        "content": "+90 543 646 15 02"
       },
       "email": {
         "title": "Email",

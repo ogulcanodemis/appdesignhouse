@@ -87,7 +87,7 @@
     "buttons": {
       "contact": "Danışmanlık Alın",
       "phone": {
-        "text": "+90 123 456 7890",
+        "text": "+90 543 646 15 02",
         "icon": "📞"
       }
     }
@@ -105,7 +105,7 @@
       },
       "contact": {
         "title": "İletişim",
-        "phone": "+90 123 456 7890",
+        "phone": "+90 543 646 15 02",
         "email": "info@apphousedesign.com",
         "address": "İstanbul, Türkiye"
       }
@@ -431,6 +431,46 @@
           "reports": "Detaylı raporlama"
         }
       },
+      "travelTaste": {
+        "title": "TravelTaste",
+        "subtitle": "Akıllı Seyahat Planlama Asistanı",
+        "description": "Bütçe ve tercihlerinize göre kişiselleştirilmiş seyahat rotaları oluşturan, gerçek zamanlı verilerle desteklenen mobil uygulama.",
+        "longDescription": "TravelTaste, kullanıcıların bütçe ve tercihlerine göre seyahat rotaları planlamasına yardımcı olan yenilikçi bir mobil uygulamadır. Google Places API'den alınan gerçek zamanlı verilerle desteklenen uygulama, kişiselleştirilmiş seyahat deneyimleri sunar ve kullanıcıların tercihlerine göre en uygun rotaları oluşturur.",
+        "features": {
+          "routePlanning": {
+            "icon": "🗺️",
+            "title": "Akıllı Rota Planlama",
+            "description": "Bütçe ve tercihlere göre kişiselleştirilmiş seyahat rotaları oluşturma."
+          },
+          "realTimeData": {
+            "icon": "🔄",
+            "title": "Gerçek Zamanlı Veri",
+            "description": "Google Places API ile güncel konum ve mekan bilgileri."
+          },
+          "customization": {
+            "icon": "⚙️",
+            "title": "Özelleştirme",
+            "description": "Yemek, kültür, doğa ve eğlence gibi kategorilerde kişisel tercihler."
+          },
+          "offlineAccess": {
+            "icon": "📱",
+            "title": "Çevrimdışı Erişim",
+            "description": "Temel özelliklere internet bağlantısı olmadan erişim imkanı."
+          }
+        },
+        "status": "Beta Aşamasında",
+        "category": "Mobil Uygulama",
+        "screenshots": {
+          "dashboard": "Ana ekran ve rota planlama",
+          "campaign": "Otel ve aktivite seçimi",
+          "reports": "Rota detayları ve harita görünümü"
+        },
+        "techStack": {
+          "frontend": ["React Native", "TypeScript", "Redux", "Expo"],
+          "backend": ["Firebase", "Google Cloud Platform"],
+          "apis": ["Google Places API", "OpenWeatherMap", "ExchangeRate-API"]
+        }
+      },
       "penGuard": {
         "title": "PenGuard",
         "subtitle": "Otomatize Web Penetrasyon Test Platformu",
@@ -464,6 +504,47 @@
           "dashboard": "Güvenlik kontrol paneli",
           "scanResults": "Tarama sonuçları",
           "metrics": "Metrik görselleştirmeleri"
+        }
+      },
+      "airy": {
+        "title": "Airy",
+        "subtitle": "Akıllı Hava Kalitesi İzleme Sistemi",
+        "description": "Gerçek zamanlı hava kalitesi verilerini takip eden, analiz eden ve kullanıcıları bilgilendiren kapsamlı bir mobil uygulama.",
+        "longDescription": "Airy, hava kalitesi verilerini anlık olarak izleyen ve kullanıcıları potansiyel sağlık riskleri konusunda bilgilendiren yenilikçi bir mobil uygulamadır. GPS entegrasyonu ve gelişmiş harita özellikleriyle bulunduğunuz bölgenin hava kalitesini detaylı bir şekilde görüntüleyebilir, geçmiş verileri analiz edebilir ve kritik durumlarda anlık bildirimler alabilirsiniz.",
+        "features": {
+          "realTimeMonitoring": {
+            "icon": "📡",
+            "title": "Gerçek Zamanlı İzleme",
+            "description": "PM2.5, PM10, CO, NO2, SO2, O3 gibi kirleticilerin anlık takibi."
+          },
+          "locationBased": {
+            "icon": "📍",
+            "title": "Konum Tabanlı",
+            "description": "GPS entegrasyonu ile bulunduğunuz bölgenin hava kalitesi analizi."
+          },
+          "notifications": {
+            "icon": "🔔",
+            "title": "Akıllı Bildirimler",
+            "description": "Kritik hava kalitesi seviyelerinde anlık push bildirimleri."
+          },
+          "offlineSupport": {
+            "icon": "🌐",
+            "title": "Çevrimdışı Erişim",
+            "description": "İnternet bağlantısı olmadan son verilere erişim imkanı."
+          }
+        },
+        "status": "Demo Aşamasında",
+        "category": "Mobil Uygulama",
+        "screenshots": {
+          "dashboard": "Ana ekran ve hava kalitesi göstergeleri",
+          "map": "Harita üzerinde kirlilik seviyeleri",
+          "history": "Geçmiş veriler ve analizler"
+        },
+        "techStack": {
+          "frontend": ["Flutter", "Dart"],
+          "backend": ["Firebase", "RESTful API"],
+          "apis": ["Google Maps API", "OpenWeather API", "Firebase Cloud Messaging"],
+          "storage": ["Hive", "SharedPreferences"]
         }
       }
     },
@@ -561,7 +642,7 @@
       },
       "phone": {
         "title": "Telefon",
-        "content": "+90 123 456 7890"
+        "content": "+90 543 646 15 02"
       },
       "email": {
         "title": "E-posta",
