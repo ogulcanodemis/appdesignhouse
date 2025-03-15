@@ -7,7 +7,8 @@
     "description": "We make your business stand out in the digital world with our software, agency, and consulting services.",
     "buttons": {
       "start": "Get Started",
-      "services": "Our Services"
+      "services": "Our Services",
+      "custom_package": "Create Package"
     }
   },
   "about": {
@@ -106,8 +107,8 @@
       "contact": {
         "title": "Contact",
         "phone": "+90 543 646 15 02",
-        "email": "info@apphousedesign.com",
-        "address": "Istanbul, Turkey"
+        "email": "info@appdesignhouse.com",
+        "address": "Istanbul - Batman / Turkey"
       }
     },
     "copyright": "© {year} AppHouse Design. All rights reserved."
@@ -152,10 +153,29 @@
     },
     "team": {
       "title": "Our Team",
+      "description": "With our professional and experienced team, we achieve the best results in every project.",
+      "founders": "Our Founding Team",
+      "members": "Our Team Members",
+      "founderBadge": "Founder",
+      "roles": {
+        "developer": "Software Developer",
+        "designer": "Designer",
+        "devops": "DevOps Specialist"
+      },
+      "specializations": {
+        "frontend": "Frontend Developer",
+        "backend": "Backend Developer",
+        "mobile-ios": "iOS Developer",
+        "mobile-android": "Android Developer",
+        "ux/ui": "UX/UI Designer",
+        "ui": "UI Designer",
+        "ux": "UX Designer",
+        "infrastructure": "Infrastructure Specialist"
+      },
       "items": {
         "design": {
           "title": "Design Team",
-          "description": "We make your brand stand out with creative and innovative designs."
+          "description": "We highlight your brand with creative and innovative designs."
         },
         "development": {
           "title": "Development Team",
@@ -633,7 +653,7 @@
       "description": "We are here to provide the best solutions for your projects. Contact us now to learn how we can help you.",
       "address": {
         "title": "Address",
-        "content": "Istanbul, Turkey"
+        "content": "Istanbul - Batman / Turkey"
       },
       "phone": {
         "title": "Phone",
@@ -641,7 +661,7 @@
       },
       "email": {
         "title": "Email",
-        "content": "info@apphousedesign.com"
+        "content": "info@appdesignhouse.com"
       }
     },
     "social": {
@@ -655,6 +675,22 @@
       "success": "Your message has been sent successfully!",
       "error": "Failed to send your message. Please try again later.",
       "rateLimit": "Please wait 30 seconds before trying again."
+    },
+    "whatsapp": {
+      "title": "Contact Us via WhatsApp",
+      "description": "You can reach us via WhatsApp for quick responses and easy communication.",
+      "message": "Hello! You can contact us via WhatsApp to get information about your projects or ask questions about our services.",
+      "button": "Send Message via WhatsApp",
+      "availability": "We are available on weekdays from 09:00 to 18:00.",
+      "online": "Online",
+      "responseTime": "Usually responds within 30 minutes",
+      "quickMessagesTitle": "Quick Messages",
+      "quickMessages": {
+        "quote": "I would like to get a quote for our project.",
+        "info": "I would like to get detailed information about your services.",
+        "meeting": "I would like to request a meeting.",
+        "support": "I need technical support."
+      }
     }
   },
   "navigation": {
@@ -662,6 +698,166 @@
     "about": "About",
     "services": "Services",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "custom_package": "Custom Package"
+  },
+  "custom_package": {
+    "page_title": "Create Custom Package",
+    "meta_description": "Create a custom package tailored to your needs and get a quote via WhatsApp.",
+    "title": "Create Your Custom Package",
+    "subtitle": "Select the services that best suit your needs, and we'll prepare a custom offer for you.",
+    "steps": {
+      "category": "Category",
+      "services": "Services",
+      "details": "Details",
+      "contact": "Contact",
+      "summary": "Summary"
+    },
+    "buttons": {
+      "previous": "Back",
+      "next": "Next",
+      "send_whatsapp": "Send via WhatsApp"
+    },
+    "category_description": "Select the area in which you want to receive service.",
+    "services_description": "Select the services you need.",
+    "details_description": "Specify the details of your project.",
+    "contact_description": "Enter your contact information, we'll get back to you as soon as possible.",
+    "summary_description": "Review your selections and send them to us via WhatsApp.",
+    "no_category_selected": "Please select a category first.",
+    "select_service_category": "Please select a service category",
+    "select_at_least_one_service": "Please select at least one service",
+    "select_budget": "Please select a budget range",
+    "select_timeline": "Please select a timeline",
+    "name_required": "Name field is required",
+    "email_required": "Email field is required",
+    "valid_email": "Please enter a valid email address",
+    "phone_required": "Phone field is required",
+    "categories": {
+      "software": {
+        "title": "Software Services",
+        "description": "Web and mobile applications, e-commerce systems, custom software solutions."
+      },
+      "agency": {
+        "title": "Agency Services",
+        "description": "Brand identity, UI/UX design, digital marketing, content creation."
+      },
+      "consulting": {
+        "title": "Consulting Services",
+        "description": "Business strategy, technology consulting, digital transformation, product management."
+      }
+    },
+    "services": {
+      "software": {
+        "web_development": {
+          "title": "Web Development",
+          "description": "Corporate websites, web applications, portal systems."
+        },
+        "mobile_app": {
+          "title": "Mobile Application",
+          "description": "Native and cross-platform applications for iOS and Android."
+        },
+        "e_commerce": {
+          "title": "E-Commerce Solutions",
+          "description": "Online sales systems, payment integrations, inventory management."
+        },
+        "custom_software": {
+          "title": "Custom Software",
+          "description": "Custom software solutions developed for your business."
+        },
+        "cms": {
+          "title": "Content Management Systems",
+          "description": "WordPress, Drupal, custom CMS solutions."
+        },
+        "api_integration": {
+          "title": "API Integration",
+          "description": "Integration with third-party services, API development."
+        }
+      },
+      "agency": {
+        "branding": {
+          "title": "Brand Identity",
+          "description": "Logo design, corporate identity, brand strategy."
+        },
+        "ui_ux": {
+          "title": "UI/UX Design",
+          "description": "User interface and experience design."
+        },
+        "digital_marketing": {
+          "title": "Digital Marketing",
+          "description": "SEO, SEM, social media management, content marketing."
+        },
+        "content_creation": {
+          "title": "Content Creation",
+          "description": "Text, visual, video content creation."
+        }
+      },
+      "consulting": {
+        "business_strategy": {
+          "title": "Business Strategy",
+          "description": "Growth strategy, business model development, market analysis."
+        },
+        "tech_consulting": {
+          "title": "Technology Consulting",
+          "description": "Technology selection, system architecture, IT strategy."
+        },
+        "digital_transformation": {
+          "title": "Digital Transformation",
+          "description": "Digitization of business processes, digital maturity assessment."
+        },
+        "product_management": {
+          "title": "Product Management",
+          "description": "Product strategy, roadmap development, feature prioritization."
+        },
+        "market_research": {
+          "title": "Market Research",
+          "description": "Competitor analysis, market trends, customer insights."
+        }
+      }
+    },
+    "budget_ranges": {
+      "under_5k": "Under $5,000",
+      "5k_10k": "$5,000 - $10,000",
+      "10k_25k": "$10,000 - $25,000",
+      "25k_50k": "$25,000 - $50,000",
+      "over_50k": "Over $50,000",
+      "not_sure": "Not sure yet"
+    },
+    "timeline_options": {
+      "asap": "As soon as possible",
+      "within_1_month": "Within 1 month",
+      "1_3_months": "1-3 months",
+      "3_6_months": "3-6 months",
+      "flexible": "Flexible"
+    },
+    "budget_label": "Your Budget Range",
+    "timeline_label": "Project Timeline",
+    "additional_info_label": "Additional Information",
+    "additional_info_placeholder": "Write details about your project, special requests, or any questions you may have here...",
+    "form": {
+      "name": "Name",
+      "name_placeholder": "Enter your name",
+      "email": "Email",
+      "email_placeholder": "Enter your email address",
+      "phone": "Phone",
+      "phone_placeholder": "Enter your phone number"
+    },
+    "privacy_notice": {
+      "title": "Privacy Notice",
+      "content": "By submitting this form, you agree to our privacy policy. Your information will be used only to contact you regarding your request."
+    },
+    "summary": {
+      "package_details": "Package Details",
+      "category": "Category",
+      "services": "Selected Services",
+      "budget": "Budget",
+      "timeline": "Timeline",
+      "additional_info": "Additional Information",
+      "contact_details": "Contact Details",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "next_steps_title": "Next Steps",
+      "next_steps_description": "After sending your request, we'll review it and contact you with a custom offer as soon as possible."
+    }
   }
 } 

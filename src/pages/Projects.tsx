@@ -214,7 +214,7 @@ const Projects = () => {
         <meta name="twitter:image" content="/images/projects-og.jpg" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://apphousedesign.com/projects" />
+        <link rel="canonical" href="https://appdesignhouse.com/projects" />
 
         {/* Schema.org yapılandırılmış veri */}
         <script type="application/ld+json">

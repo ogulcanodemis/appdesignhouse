@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import TeamSection from '../components/sections/TeamSection';
 
 const values = [
   {
@@ -22,33 +23,6 @@ const values = [
     id: 'sustainability',
     icon: '🌱',
     gradient: 'from-accent to-light',
-  },
-];
-
-const team = [
-  {
-    name: 'Tasarım Ekibi',
-    description: 'Yaratıcı ve yenilikçi tasarımlarla markanızı öne çıkarıyoruz.',
-    icon: '🎨',
-    gradient: 'from-primary to-accent',
-  },
-  {
-    name: 'Geliştirme Ekibi',
-    description: 'Modern teknolojilerle güçlü ve ölçeklenebilir çözümler üretiyoruz.',
-    icon: '💻',
-    gradient: 'from-secondary to-light',
-  },
-  {
-    name: 'Pazarlama Ekibi',
-    description: 'Dijital dünyada markanızın görünürlüğünü artırıyoruz.',
-    icon: '📈',
-    gradient: 'from-tertiary to-primary',
-  },
-  {
-    name: 'Destek Ekibi',
-    description: '7/24 teknik destek ve müşteri hizmetleri sunuyoruz.',
-    icon: '🛟',
-    gradient: 'from-accent to-secondary',
   },
 ];
 
@@ -562,126 +536,8 @@ const About = () => {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-20 bg-gradient-accent relative overflow-hidden">
-          {/* Animated Background */}
-          <div className="absolute inset-0">
-            <motion.div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-                backgroundSize: '30px 30px',
-              }}
-              animate={{
-                scale: [1, 1.1, 1],
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{
-                duration: 10,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-            />
-
-            {/* Team Connection Lines */}
-            {Array.from({ length: 8 }).map((_, index) => (
-              <motion.div
-                key={`connection-${index}`}
-                className="absolute w-32 h-px"
-                style={{
-                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)',
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  transform: `rotate(${Math.random() * 360}deg)`,
-                }}
-                animate={{
-                  scaleX: [0, 1, 0],
-                  opacity: [0, 0.5, 0],
-                }}
-                transition={{
-                  duration: 3 + Math.random() * 2,
-                  repeat: Infinity,
-                  ease: "linear",
-                  delay: index * 0.2,
-                }}
-              />
-            ))}
-
-            {/* Floating Team Icons */}
-            {['🎨', '💻', '📈', '🛟'].map((icon, index) => (
-              <motion.div
-                key={`team-icon-${index}`}
-                className="absolute text-3xl opacity-10"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                }}
-                animate={{
-                  y: [-20, 20],
-                  x: [-20, 20],
-                  rotate: [0, 360],
-                  scale: [1, 1.2, 1],
-                }}
-                transition={{
-                  duration: 8 + index * 2,
-                  repeat: Infinity,
-                  ease: "linear",
-                  delay: index * 0.5,
-                }}
-              >
-                {icon}
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                <span className="gradient-text bg-gradient-to-r from-primary to-accent">
-                  {t('aboutPage.team.title')}
-                </span>
-              </h2>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { id: 'design', icon: '🎨' },
-                { id: 'development', icon: '💻' },
-                { id: 'marketing', icon: '📈' },
-                { id: 'support', icon: '🛟' }
-              ].map((team) => (
-                <motion.div
-                  key={team.id}
-                  className="relative group"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                  <motion.div
-                    className="relative bg-white/50 backdrop-blur-lg rounded-2xl p-8 h-full border border-gray-100 hover:border-gray-200 transition-colors"
-                    whileHover={{ scale: 1.02 }}
-                  >
-                    <div className="text-4xl mb-4">{team.icon}</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">
-                      {t(`aboutPage.team.items.${team.id}.title`)}
-                    </h3>
-                    <p className="text-gray-600">
-                      {t(`aboutPage.team.items.${team.id}.description`)}
-                    </p>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Ekibimiz Bölümü - Yeni TeamSection bileşeni */}
+        <TeamSection />
       </div>
     </>
   );

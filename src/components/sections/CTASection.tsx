@@ -205,7 +205,7 @@ const CTASection = () => {
             </Link>
 
             <motion.a
-              href="tel:+901234567890"
+              href="tel:+905436461502"
               className="btn bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 text-lg px-8 py-4 relative overflow-hidden group rounded-xl"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

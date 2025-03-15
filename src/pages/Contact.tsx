@@ -6,7 +6,7 @@ import * as yup from 'yup';
 import toast, { Toaster } from 'react-hot-toast';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import WhatsAppContact from '../components/contact/WhatsAppContact';
 interface FormData {
   name: string;
   email: string;
@@ -36,7 +36,7 @@ const Contact = () => {
   const y = useTransform(scrollYProgress, [0, 0.2], [0, -50]);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [lastSubmitTime, setLastSubmitTime] = useState<number>(0);
+  const [lastSubmitTime] = useState<number>(0);
   const [selectedFileName, setSelectedFileName] = useState<string>('');
   const [isUploading, setIsUploading] = useState(false);
 
@@ -107,6 +107,8 @@ const Contact = () => {
         return;
       }
 
+      console.log('Form verileri:', data);
+      
       // FormData oluştur
       const formData = new FormData();
       formData.append('name', data.name.trim());
@@ -124,40 +126,49 @@ const Contact = () => {
       }
 
       const API_URL = import.meta.env.MODE === 'development' 
-        ? 'http://localhost:8000/handlers/contact.php'
-        : '/api/handlers/contact.php';
+        ? 'http://localhost:8000/api/test-form'
+        : '/api/test-form';
 
-      const response = await fetch(API_URL, {
-        method: 'POST',
-        body: formData
-      });
-
-      const result = await response.json();
-
-      if (response.ok && result.success) {
-        setLastSubmitTime(now);
-        toast.success(t('contactPage.notifications.success'), {
-          duration: 5000,
-          style: {
-            background: '#10B981',
-            color: '#fff',
-            padding: '16px',
-            borderRadius: '8px',
-          },
-          icon: '✅'
+      console.log('Sending form to:', API_URL);
+      
+      try {
+        const response = await fetch(API_URL, {
+          method: 'POST',
+          body: formData
         });
-        reset();
-        setSelectedFileName('');
+
+        console.log('Response status:', response.status);
+        
+        // Yanıt kontrolü
+        if (!response.ok) {
+          toast.error('Sunucu yanıtı alınamadı');
+          setIsSubmitting(false);
+          return;
+        }
+
+        const result = await response.json();
+        console.log('Form submission result:', result);
+        
+        toast.success('Form başarıyla gönderildi (Test)');
+        reset(); // Formu sıfırla
+        
         // Dosya input'unu temizle
         if (fileInput) {
           fileInput.value = '';
         }
-      } else {
-        throw new Error(result.error || t('contactPage.notifications.error'));
+      } catch (error) {
+        console.error('Form submission exception:', error);
+        toast.error('Form gönderilirken bir hata oluştu');
+      } finally {
+        setIsSubmitting(false);
       }
+      
+      /* Gerçek form gönderimi şimdilik devre dışı
+      // ... existing code ...
+      */
     } catch (error) {
       console.error('Form Error:', error);
-      toast.error(t('contactPage.notifications.error'), {
+      toast.error(error instanceof Error ? error.message : t('contactPage.notifications.error'), {
         duration: 5000,
         style: {
           background: '#EF4444',
@@ -167,7 +178,6 @@ const Contact = () => {
         },
         icon: '❌'
       });
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -213,21 +223,18 @@ const Contact = () => {
       icon: '📞',
       title: t('contactPage.info.phone.title'),
       content: t('contactPage.info.phone.content'),
-      link: 'tel:+901234567890',
+      link: 'tel:+905436461502',
     },
     {
       icon: '✉️',
       title: t('contactPage.info.email.title'),
       content: t('contactPage.info.email.content'),
-      link: 'mailto:info@apphousedesign.com',
+      link: 'mailto:info@appdesignhouse.com',
     },
   ];
 
   const socialLinks: SocialLink[] = [
-    { icon: '𝕏', name: t('contactPage.social.twitter'), url: 'https://twitter.com' },
-    { icon: '𝕃', name: t('contactPage.social.linkedin'), url: 'https://linkedin.com' },
-    { icon: '𝕀', name: t('contactPage.social.instagram'), url: 'https://instagram.com' },
-    { icon: '𝔾', name: t('contactPage.social.github'), url: 'https://github.com' },
+    { icon: '𝕀', name: t('contactPage.social.instagram'), url: 'https://www.instagram.com/appdesignhouse/?igsh=OGZpNHAzNTM2Y3Jm&utm_source=qr' },
   ];
 
   // Schema.org yapılandırılmış veri
@@ -236,7 +243,7 @@ const Contact = () => {
     "@type": "ContactPage",
     "name": t('contactPage.meta.title'),
     "description": t('contactPage.meta.description'),
-    "url": "https://apphousedesign.com/contact",
+    "url": "https://appdesignhouse.com/contact",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": t('contactPage.info.phone.content'),
@@ -263,7 +270,7 @@ const Contact = () => {
         <meta property="og:title" content="İletişim - AppHouse Design" />
         <meta property="og:description" content="AppHouse Design ile iletişime geçin. Yazılım, ajans ve danışmanlık hizmetleri için form doldurun veya direkt bize ulaşın." />
         <meta property="og:image" content="/images/contact-og.jpg" />
-        <meta property="og:url" content="https://apphousedesign.com/contact" />
+        <meta property="og:url" content="https://appdesignhouse.com/contact" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -272,12 +279,12 @@ const Contact = () => {
         <meta name="twitter:image" content="/images/contact-og.jpg" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://apphousedesign.com/contact" />
+        <link rel="canonical" href="https://appdesignhouse.com/contact" />
 
         {/* Alternatif Diller */}
-        <link rel="alternate" href="https://apphousedesign.com/en/contact" hrefLang="en" />
-        <link rel="alternate" href="https://apphousedesign.com/contact" hrefLang="tr" />
-        <link rel="alternate" href="https://apphousedesign.com/contact" hrefLang="x-default" />
+        <link rel="alternate" href="https://appdesignhouse.com/en/contact" hrefLang="en" />
+        <link rel="alternate" href="https://appdesignhouse.com/contact" hrefLang="tr" />
+        <link rel="alternate" href="https://appdesignhouse.com/contact" hrefLang="x-default" />
 
         {/* Schema.org yapılandırılmış veri */}
         <script type="application/ld+json">
@@ -459,216 +466,8 @@ const Contact = () => {
               </motion.div>
 
               {/* Contact Form */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100"
-              >
-                <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    {/* Name Input */}
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
-                        {t('contactPage.hero.form.name.label')}
-                      </label>
-                      <input
-                        type="text"
-                        placeholder={t('contactPage.hero.form.name.placeholder')}
-                        {...register('name')}
-                        className={`w-full px-4 py-2 rounded-lg border ${
-                          errors.name ? 'border-red-500' : 'border-gray-300'
-                        } focus:ring-2 focus:ring-primary/50 outline-none transition-shadow`}
-                      />
-                      {errors.name && (
-                        <p className="mt-1 text-sm text-red-500">
-                          {t(`contactPage.hero.form.name.error.${errors.name.type}`)}
-                        </p>
-                      )}
-                    </div>
-
-                    {/* Email Input */}
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
-                        {t('contactPage.hero.form.email.label')}
-                      </label>
-                      <input
-                        type="email"
-                        placeholder={t('contactPage.hero.form.email.placeholder')}
-                        {...register('email')}
-                        className={`w-full px-4 py-2 rounded-lg border ${
-                          errors.email ? 'border-red-500' : 'border-gray-300'
-                        } focus:ring-2 focus:ring-primary/50 outline-none transition-shadow`}
-                      />
-                      {errors.email && (
-                        <p className="mt-1 text-sm text-red-500">
-                          {t(`contactPage.hero.form.email.error.${errors.email.type}`)}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Phone Input */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      {t('contactPage.hero.form.phone.label')}
-                    </label>
-                    <input
-                      type="tel"
-                      placeholder={t('contactPage.hero.form.phone.placeholder')}
-                      {...register('phone')}
-                      className={`w-full px-4 py-2 rounded-lg border ${
-                        errors.phone ? 'border-red-500' : 'border-gray-300'
-                      } focus:ring-2 focus:ring-primary/50 outline-none transition-shadow`}
-                    />
-                    {errors.phone && (
-                      <p className="mt-1 text-sm text-red-500">
-                        {t(`contactPage.hero.form.phone.error.${errors.phone.type}`)}
-                      </p>
-                    )}
-                  </div>
-
-                  {/* Subject Input */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      {t('contactPage.hero.form.subject.label')}
-                    </label>
-                    <input
-                      type="text"
-                      placeholder={t('contactPage.hero.form.subject.placeholder')}
-                      {...register('subject')}
-                      className={`w-full px-4 py-2 rounded-lg border ${
-                        errors.subject ? 'border-red-500' : 'border-gray-300'
-                      } focus:ring-2 focus:ring-primary/50 outline-none transition-shadow`}
-                    />
-                    {errors.subject && (
-                      <p className="mt-1 text-sm text-red-500">
-                        {t(`contactPage.hero.form.subject.error.${errors.subject.type}`)}
-                      </p>
-                    )}
-                  </div>
-
-                  {/* Message Input */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      {t('contactPage.hero.form.message.label')}
-                    </label>
-                    <textarea
-                      placeholder={t('contactPage.hero.form.message.placeholder')}
-                      {...register('message')}
-                      rows={4}
-                      className={`w-full px-4 py-2 rounded-lg border ${
-                        errors.message ? 'border-red-500' : 'border-gray-300'
-                      } focus:ring-2 focus:ring-primary/50 outline-none transition-shadow`}
-                    />
-                    {errors.message && (
-                      <p className="mt-1 text-sm text-red-500">
-                        {t(`contactPage.hero.form.message.error.${errors.message.type}`)}
-                      </p>
-                    )}
-                  </div>
-
-                  {/* File Upload */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      {t('contactPage.hero.form.file.label')}
-                    </label>
-                    <div className="relative">
-                      <label
-                        className={`flex items-center justify-center w-full px-4 py-3 border border-gray-300 border-dashed rounded-lg cursor-pointer transition-all duration-300 ${
-                          isUploading ? 'bg-primary/5 border-primary' : 'bg-gray-50 hover:bg-gray-100'
-                        } group`}
-                      >
-                        <input
-                          type="file"
-                          name="file"
-                          accept=".pdf,.doc,.docx,.txt"
-                          onChange={handleFileChange}
-                          className="hidden"
-                        />
-                        <div className="flex items-center space-x-2 text-gray-600 group-hover:text-primary">
-                          {isUploading ? (
-                            <motion.div
-                              className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full"
-                              animate={{ rotate: 360 }}
-                              transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                            />
-                          ) : (
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                            </svg>
-                          )}
-                          <span className="text-sm">
-                            {isUploading ? t('contactPage.hero.form.file.uploading') : 
-                             selectedFileName ? selectedFileName :
-                             t('contactPage.hero.form.file.placeholder')}
-                          </span>
-                        </div>
-                      </label>
-                      {selectedFileName && !isUploading && (
-                        <motion.div
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          className="absolute -top-2 -right-2 bg-primary text-white text-xs px-2 py-1 rounded-full"
-                        >
-                          {t('contactPage.hero.form.file.selected')}
-                        </motion.div>
-                      )}
-                      {errors.file && (
-                        <p className="mt-1 text-sm text-red-500">
-                          {t(`contactPage.hero.form.file.error.${errors.file.type}`)}
-                        </p>
-                      )}
-                      <motion.div 
-                        className="mt-1 text-xs text-gray-500"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                      >
-                        <div className="flex items-center space-x-2">
-                          <span>{t('contactPage.hero.form.file.allowedTypes')}</span>
-                          <div className="flex items-center space-x-2">
-                            {[
-                              { type: 'PDF', color: 'red' },
-                              { type: 'DOC', color: 'blue' },
-                              { type: 'DOCX', color: 'blue' },
-                              { type: 'TXT', color: 'gray' }
-                            ].map((format, index) => (
-                              <motion.span
-                                key={format.type}
-                                className={`font-medium text-${format.color}-600 bg-${format.color}-50 px-2 py-0.5 rounded-full text-xs`}
-                                whileHover={{ scale: 1.05 }}
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: index * 0.1 }}
-                              >
-                                {format.type}
-                              </motion.span>
-                            ))}
-                          </div>
-                        </div>
-                      </motion.div>
-                    </div>
-                  </div>
-
-                  {/* Submit Button */}
-                  <motion.button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <span className="animate-spin mr-2">⚡</span>
-                        {t('contactPage.hero.form.submit.sending')}
-                      </>
-                    ) : (
-                      t('contactPage.hero.form.submit.label')
-                    )}
-                  </motion.button>
-                </form>
-              </motion.div>
+              {/* WhatsApp Contact */}
+              <WhatsAppContact />
             </div>
           </div>
         </section>

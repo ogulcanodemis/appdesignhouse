@@ -186,6 +186,18 @@ const HeroSection = () => {
                 <span className="relative z-10">{t('hero.buttons.start')}</span>
               </Link>
               <Link
+                to="/custom-package"
+                className="btn bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 text-lg px-8 py-4 relative overflow-hidden group"
+              >
+                <motion.span
+                  className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                  initial={{ scale: 0 }}
+                  whileHover={{ scale: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <span className="relative z-10">{t('hero.buttons.custom_package')}</span>
+              </Link>
+              <Link
                 to="/services"
                 className="btn bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 text-lg px-8 py-4 relative overflow-hidden group"
               >

@@ -29,21 +29,19 @@ const ContactInfoComponent = () => {
       icon: '📞',
       title: t('contactPage.info.phone.title'),
       content: t('contactPage.info.phone.content'),
-      link: 'tel:+901234567890',
+      link: 'tel:+905436461502',
     },
     {
       icon: '✉️',
       title: t('contactPage.info.email.title'),
       content: t('contactPage.info.email.content'),
-      link: 'mailto:info@apphousedesign.com',
+      link: 'mailto:info@appdesignhouse.com',
     },
   ];
 
   const socialLinks: SocialLink[] = [
-    { icon: '𝕏', name: t('contactPage.social.twitter'), url: 'https://twitter.com' },
-    { icon: '𝕃', name: t('contactPage.social.linkedin'), url: 'https://linkedin.com' },
-    { icon: '𝕀', name: t('contactPage.social.instagram'), url: 'https://instagram.com' },
-    { icon: '𝔾', name: t('contactPage.social.github'), url: 'https://github.com' },
+    { icon: '𝕀', name: t('contactPage.social.instagram'), url: 'https://www.instagram.com/appdesignhouse/?igsh=OGZpNHAzNTM2Y3Jm&utm_source=qr' },
+
   ];
 
   return (

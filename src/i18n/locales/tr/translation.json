@@ -7,7 +7,8 @@
     "description": "Yazılım, ajans ve danışmanlık hizmetlerimizle işletmenizi dijital dünyada öne çıkarıyoruz.",
     "buttons": {
       "start": "Hemen Başlayın",
-      "services": "Hizmetlerimiz"
+      "services": "Hizmetlerimiz",
+      "custom_package": "Özel Paket Oluştur"
     }
   },
   "about": {
@@ -106,8 +107,8 @@
       "contact": {
         "title": "İletişim",
         "phone": "+90 543 646 15 02",
-        "email": "info@apphousedesign.com",
-        "address": "İstanbul, Türkiye"
+        "email": "info@appdesignhouse.com",
+        "address": "İstanbul / Batman Türkiye"
       }
     },
     "copyright": "© {year} AppHouse Design. Tüm hakları saklıdır."
@@ -152,6 +153,25 @@
     },
     "team": {
       "title": "Ekibimiz",
+      "description": "Profesyonel ve deneyimli ekibimizle her projede en iyi sonuçları elde ediyoruz.",
+      "founders": "Kurucu Ekibimiz",
+      "members": "Ekip Üyelerimiz",
+      "founderBadge": "Kurucu",
+      "roles": {
+        "developer": "Yazılım Geliştirici",
+        "designer": "Tasarımcı",
+        "devops": "DevOps Uzmanı"
+      },
+      "specializations": {
+        "frontend": "Frontend Geliştirici",
+        "backend": "Backend Geliştirici",
+        "mobile-ios": "iOS Geliştirici",
+        "mobile-android": "Android Geliştirici",
+        "ux/ui": "UX/UI Tasarımcı",
+        "ui": "UI Tasarımcı",
+        "ux": "UX Tasarımcı",
+        "infrastructure": "Altyapı Uzmanı"
+      },
       "items": {
         "design": {
           "title": "Tasarım Ekibi",
@@ -638,7 +658,7 @@
       "description": "Projeleriniz için en iyi çözümleri sunmak için buradayız. Size nasıl yardımcı olabileceğimizi öğrenmek için hemen iletişime geçin.",
       "address": {
         "title": "Adres",
-        "content": "İstanbul, Türkiye"
+        "content": "İstanbul / Batman Türkiye"
       },
       "phone": {
         "title": "Telefon",
@@ -646,7 +666,7 @@
       },
       "email": {
         "title": "E-posta",
-        "content": "info@apphousedesign.com"
+        "content": "info@appdesignhouse.com"
       }
     },
     "social": {
@@ -655,6 +675,22 @@
       "linkedin": "LinkedIn",
       "instagram": "Instagram",
       "github": "GitHub"
+    },
+    "whatsapp": {
+      "title": "WhatsApp ile İletişime Geçin",
+      "description": "Hızlı yanıt ve kolay iletişim için WhatsApp üzerinden bize ulaşabilirsiniz.",
+      "message": "Merhaba! Projeleriniz hakkında bilgi almak veya hizmetlerimiz hakkında soru sormak için bize WhatsApp üzerinden ulaşabilirsiniz.",
+      "button": "WhatsApp ile Mesaj Gönder",
+      "availability": "Hafta içi 09:00 - 18:00 saatleri arasında hizmet vermekteyiz.",
+      "online": "Çevrimiçi",
+      "responseTime": "Genellikle 30 dakika içinde yanıt",
+      "quickMessagesTitle": "Hazır Mesajlar",
+      "quickMessages": {
+        "quote": "Projemiz için fiyat teklifi almak istiyorum.",
+        "info": "Hizmetleriniz hakkında detaylı bilgi almak istiyorum.",
+        "meeting": "Görüşme talep etmek istiyorum.",
+        "support": "Teknik destek almak istiyorum."
+      }
     }
   },
   "navigation": {
@@ -662,6 +698,166 @@
     "about": "Hakkımızda",
     "services": "Hizmetler",
     "projects": "Projeler",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "custom_package": "Özel Paket"
+  },
+  "custom_package": {
+    "page_title": "Özel Paket Oluştur",
+    "meta_description": "İhtiyaçlarınıza özel paket oluşturun ve WhatsApp üzerinden hemen teklif alın.",
+    "title": "Kendi Özel Paketinizi Oluşturun",
+    "subtitle": "İhtiyaçlarınıza en uygun hizmetleri seçin, size özel bir teklif hazırlayalım.",
+    "steps": {
+      "category": "Kategori",
+      "services": "Hizmetler",
+      "details": "Detaylar",
+      "contact": "İletişim",
+      "summary": "Özet"
+    },
+    "buttons": {
+      "previous": "Geri",
+      "next": "İleri",
+      "send_whatsapp": "WhatsApp ile Gönder"
+    },
+    "category_description": "Hangi alanda hizmet almak istediğinizi seçin.",
+    "services_description": "İhtiyacınız olan hizmetleri seçin.",
+    "details_description": "Projenizle ilgili detayları belirtin.",
+    "contact_description": "İletişim bilgilerinizi girin, size en kısa sürede dönüş yapalım.",
+    "summary_description": "Seçimlerinizi gözden geçirin ve WhatsApp üzerinden bize gönderin.",
+    "no_category_selected": "Lütfen önce bir kategori seçin.",
+    "select_service_category": "Lütfen bir hizmet kategorisi seçin",
+    "select_at_least_one_service": "En az bir hizmet seçmelisiniz",
+    "select_budget": "Lütfen bütçe aralığı seçin",
+    "select_timeline": "Lütfen zaman çerçevesi seçin",
+    "name_required": "İsim alanı zorunludur",
+    "email_required": "E-posta alanı zorunludur",
+    "valid_email": "Geçerli bir e-posta adresi girin",
+    "phone_required": "Telefon alanı zorunludur",
+    "categories": {
+      "software": {
+        "title": "Yazılım Hizmetleri",
+        "description": "Web ve mobil uygulamalar, e-ticaret sistemleri, özel yazılım çözümleri."
+      },
+      "agency": {
+        "title": "Ajans Hizmetleri",
+        "description": "Marka kimliği, UI/UX tasarımı, dijital pazarlama, içerik üretimi."
+      },
+      "consulting": {
+        "title": "Danışmanlık Hizmetleri",
+        "description": "İş stratejisi, teknoloji danışmanlığı, dijital dönüşüm, ürün yönetimi."
+      }
+    },
+    "services": {
+      "software": {
+        "web_development": {
+          "title": "Web Geliştirme",
+          "description": "Kurumsal web siteleri, web uygulamaları, portal sistemleri."
+        },
+        "mobile_app": {
+          "title": "Mobil Uygulama",
+          "description": "iOS ve Android için native ve cross-platform uygulamalar."
+        },
+        "e_commerce": {
+          "title": "E-Ticaret Çözümleri",
+          "description": "Online satış sistemleri, ödeme entegrasyonları, stok yönetimi."
+        },
+        "custom_software": {
+          "title": "Özel Yazılım",
+          "description": "İşletmenize özel geliştirilen yazılım çözümleri."
+        },
+        "cms": {
+          "title": "İçerik Yönetim Sistemleri",
+          "description": "WordPress, Drupal, özel CMS çözümleri."
+        },
+        "api_integration": {
+          "title": "API Entegrasyonu",
+          "description": "Üçüncü parti servislerle entegrasyon, API geliştirme."
+        }
+      },
+      "agency": {
+        "branding": {
+          "title": "Marka Kimliği",
+          "description": "Logo tasarımı, kurumsal kimlik, marka stratejisi."
+        },
+        "ui_ux": {
+          "title": "UI/UX Tasarımı",
+          "description": "Kullanıcı arayüzü ve deneyimi tasarımı."
+        },
+        "digital_marketing": {
+          "title": "Dijital Pazarlama",
+          "description": "SEO, SEM, sosyal medya yönetimi, içerik pazarlama."
+        },
+        "content_creation": {
+          "title": "İçerik Üretimi",
+          "description": "Metin, görsel, video içerik üretimi."
+        }
+      },
+      "consulting": {
+        "business_strategy": {
+          "title": "İş Stratejisi",
+          "description": "Büyüme stratejisi, iş modeli geliştirme, pazar analizi."
+        },
+        "tech_consulting": {
+          "title": "Teknoloji Danışmanlığı",
+          "description": "Teknoloji seçimi, sistem mimarisi, IT stratejisi."
+        },
+        "digital_transformation": {
+          "title": "Dijital Dönüşüm",
+          "description": "İş süreçlerinin dijitalleştirilmesi, dijital olgunluk değerlendirmesi."
+        },
+        "product_management": {
+          "title": "Ürün Yönetimi",
+          "description": "Ürün stratejisi, roadmap planlama, MVP geliştirme."
+        },
+        "market_research": {
+          "title": "Pazar Araştırması",
+          "description": "Rekabet analizi, pazar fırsatları, tüketici davranışları."
+        }
+      }
+    },
+    "budget_ranges": {
+      "under_5k": "5.000 $ altı",
+      "5k_10k": "5.000 - 10.000 $",
+      "10k_25k": "10.000 - 25.000 $",
+      "25k_50k": "25.000 - 50.000 $",
+      "over_50k": "50.000 $ üzeri",
+      "not_sure": "Emin değilim"
+    },
+    "timeline_options": {
+      "asap": "En kısa sürede",
+      "within_1_month": "1 ay içinde",
+      "1_3_months": "1-3 ay içinde",
+      "3_6_months": "3-6 ay içinde",
+      "flexible": "Esnek"
+    },
+    "budget_label": "Bütçe Aralığınız",
+    "timeline_label": "Zaman Çerçevesi",
+    "additional_info_label": "Ek Bilgiler",
+    "additional_info_placeholder": "Projenizle ilgili detayları, özel isteklerinizi veya sorularınızı buraya yazabilirsiniz...",
+    "form": {
+      "name": "Adınız Soyadınız",
+      "name_placeholder": "Adınızı ve soyadınızı girin",
+      "email": "E-posta Adresiniz",
+      "email_placeholder": "E-posta adresinizi girin",
+      "phone": "Telefon Numaranız",
+      "phone_placeholder": "Telefon numaranızı girin"
+    },
+    "privacy_notice": {
+      "title": "Kişisel Verilerin Korunması",
+      "content": "Paylaştığınız bilgiler, size özel teklif hazırlamak amacıyla kullanılacak ve KVKK kapsamında korunacaktır. Detaylı bilgi için Gizlilik Politikamızı inceleyebilirsiniz."
+    },
+    "summary": {
+      "package_details": "Paket Detayları",
+      "contact_details": "İletişim Bilgileri",
+      "category": "Kategori",
+      "services": "Seçilen Hizmetler",
+      "budget": "Bütçe",
+      "timeline": "Zaman Çerçevesi",
+      "additional_info": "Ek Bilgiler",
+      "name": "İsim",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "next_steps_title": "Sonraki Adımlar",
+      "next_steps_description": "WhatsApp'a yönlendirileceksiniz. Mesajı gönderdikten sonra ekibimiz en kısa sürede sizinle iletişime geçecektir."
+    }
   }
 } 

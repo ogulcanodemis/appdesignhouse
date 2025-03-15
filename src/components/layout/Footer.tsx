@@ -47,8 +47,8 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { href: 'tel:+901234567890', key: 'phone' },
-    { href: 'mailto:info@apphousedesign.com', key: 'email' },
+    { href: 'tel:+905436461502', key: 'phone' },
+    { href: 'mailto:info@appdesignhouse.com', key: 'email' },
     { key: 'address' }
   ];
 

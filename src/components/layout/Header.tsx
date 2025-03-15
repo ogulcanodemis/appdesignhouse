@@ -24,6 +24,7 @@ const menuItems = [
   { path: '/about', key: 'about' },
   { path: '/services', key: 'services' },
   { path: '/projects', key: 'projects' },
+  { path: '/custom-package', key: 'custom_package' },
   { path: '/contact', key: 'contact' },
 ];
 

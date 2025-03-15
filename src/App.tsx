@@ -15,6 +15,7 @@ const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Projects = lazy(() => import('./pages/Projects'));
+const CustomPackage = lazy(() => import('./pages/CustomPackage'));
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
                   <Route path="/services" element={<Services />} />
                   <Route path="/projects" element={<Projects />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/custom-package" element={<CustomPackage />} />
                 </Route>
               </Routes>
             </Suspense>

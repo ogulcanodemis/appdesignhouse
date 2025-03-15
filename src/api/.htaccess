@@ -1,23 +1,56 @@
-# PHP hata raporlamayı kapat
-php_flag display_errors off
+# PHP Ayarları
+php_flag display_errors Off
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+php_value max_execution_time 300
+php_value max_input_time 300
+php_value memory_limit 256M
 
-# Dizin listelemesini kapat
+# Mail ayarları
+php_value SMTP localhost
+php_value smtp_port 25
+php_value sendmail_from info@appdesignhouse.com
+php_flag mail.add_x_header On
+
+# CORS Başlıkları
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Accept"
+</IfModule>
+
+# Dizin listelemeyi kapat
 Options -Indexes
+
+# Hata günlüğü
+php_flag log_errors On
+php_value error_log error.log
 
 # Rewrite motorunu aç
 RewriteEngine On
 
 # API endpoint'lerine yönlendirme
 RewriteRule ^contact$ handlers/contact.php [L]
+RewriteRule ^api/contact$ handlers/contact.php [L]
+RewriteRule ^api/test-json$ test-json.php [L]
+RewriteRule ^api/test-form$ test-form.php [L]
 
-# Güvenlik başlıkları
-Header set X-Content-Type-Options "nosniff"
-Header set X-XSS-Protection "1; mode=block"
-Header set X-Frame-Options "SAMEORIGIN"
-Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+# Sadece belirli dosyalara erişime izin ver
+<FilesMatch "^(contact\.php|debug\.php|test\.php|test|test-json\.php|test-form\.php)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
 
-# PHP dosyalarına doğrudan erişimi engelle
-RewriteRule ^(config|utils)/.*\.php$ - [F]
+# Dosya Erişim Kısıtlamaları
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^(config|vendor|utils)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
 
 # Uploads dizinine doğrudan erişimi engelle
 <Directory "uploads">
@@ -32,5 +65,5 @@ RewriteRule ^(config|utils)/.*\.php$ - [F]
 </FilesMatch>
 
 # Maksimum dosya yükleme boyutu
-php_value upload_max_filesize 5M
-php_value post_max_size 6M 
+php_value upload_max_filesize 10M
+php_value post_max_size 12M 
