@@ -732,6 +732,11 @@
     "email_required": "Email field is required",
     "valid_email": "Please enter a valid email address",
     "phone_required": "Phone field is required",
+    "seo_section": {
+      "title": "How Custom Package Works?",
+      "paragraph1": "At App Design House, we offer solutions tailored to your needs. With our custom package creation tool, you can select the most suitable services from our software, agency, and consulting offerings, and receive a customized quote based on your budget and timeline.",
+      "paragraph2": "Based on your selected services, our expert team will contact you to discuss the details of your project and provide a customized solution. You can choose from our software development, web design, mobile application, digital marketing, or consulting services to take your business to the next level."
+    },
     "categories": {
       "software": {
         "title": "Software Services",

@@ -732,6 +732,11 @@
     "email_required": "E-posta alanı zorunludur",
     "valid_email": "Geçerli bir e-posta adresi girin",
     "phone_required": "Telefon alanı zorunludur",
+    "seo_section": {
+      "title": "Özel Paket Nasıl Çalışır?",
+      "paragraph1": "App Design House olarak, ihtiyaçlarınıza özel çözümler sunuyoruz. Özel paket oluşturma aracımız ile yazılım, ajans ve danışmanlık hizmetlerimiz arasından size en uygun olanları seçebilir, bütçenize ve zaman çerçevenize göre özelleştirilmiş bir teklif alabilirsiniz.",
+      "paragraph2": "Seçtiğiniz hizmetlere göre uzman ekibimiz sizinle iletişime geçerek projenizin detaylarını konuşacak ve size özel bir çözüm sunacaktır. Yazılım geliştirme, web tasarımı, mobil uygulama, dijital pazarlama veya danışmanlık hizmetlerimizden dilediğinizi seçerek işletmenizi bir adım öne taşıyabilirsiniz."
+    },
     "categories": {
       "software": {
         "title": "Yazılım Hizmetleri",

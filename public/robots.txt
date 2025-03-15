@@ -1,0 +1,16 @@
+# App Design House robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://appdesignhouse.com/sitemap.xml
+
+# Disallow specific paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /assets/fonts/
+Disallow: /assets/raw/
+
+# Crawl delay
+Crawl-delay: 10 
