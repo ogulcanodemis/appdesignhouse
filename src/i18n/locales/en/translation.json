@@ -569,8 +569,19 @@
       }
     },
     "common": {
-      "screenshotsTitle": "Screenshots"
+      "screenshotsTitle": "Screenshots",
+      "privacyPolicy": "Privacy Policy"
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Information about our policies and data processing methods to protect user privacy.",
+    "meta": {
+      "description": "Privacy policy of App Design House and its applications. Information about how personal data is collected, processed, and protected."
+    },
+    "backToProjects": "Back to Projects",
+    "contentPlaceholder": "Privacy policy content will be added soon.",
+    "lastUpdated": "Last Updated"
   },
   "contactPage": {
     "meta": {

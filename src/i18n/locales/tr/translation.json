@@ -569,8 +569,19 @@
       }
     },
     "common": {
-      "screenshotsTitle": "Ekran Görüntüleri"
+      "screenshotsTitle": "Ekran Görüntüleri",
+      "privacyPolicy": "Gizlilik Politikası"
     }
+  },
+  "privacyPolicy": {
+    "title": "Gizlilik Politikası",
+    "subtitle": "Kullanıcı gizliliğini korumak için uyguladığımız politikalar ve veri işleme yöntemlerimiz hakkında bilgi.",
+    "meta": {
+      "description": "App Design House ve geliştirdiği uygulamaların gizlilik politikası. Kişisel verilerin nasıl toplandığı, işlendiği ve korunduğu hakkında bilgi."
+    },
+    "backToProjects": "Projelere Dön",
+    "contentPlaceholder": "Gizlilik politikası içeriği yakında eklenecektir.",
+    "lastUpdated": "Son Güncelleme"
   },
   "contactPage": {
     "meta": {
