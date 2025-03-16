@@ -111,7 +111,7 @@
         "address": "Istanbul - Batman / Turkey"
       }
     },
-    "copyright": "© {year} AppHouse Design. All rights reserved."
+    "copyright": "© {year} App Design House. All rights reserved."
   },
   "aboutPage": {
     "hero": {
@@ -214,7 +214,7 @@
   },
   "servicesPage": {
     "meta": {
-      "title": "Our Services - AppHouse Design",
+      "title": "Our Services - App Design House",
       "description": "Grow your business in the digital world with our software, agency, and consulting services."
     },
     "hero": {
@@ -370,7 +370,7 @@
   },
   "projectsPage": {
     "meta": {
-      "title": "Our Projects - AppHouse Design",
+      "title": "Our Projects - App Design House",
       "description": "Explore our successful projects developed with modern technologies and creative solutions."
     },
     "hero": {
@@ -574,8 +574,8 @@
   },
   "contactPage": {
     "meta": {
-      "title": "Contact - AppHouse Design",
-      "description": "Get in touch with AppHouse Design. Fill out the form or contact us directly for software, agency, and consulting services."
+      "title": "Contact - App Design House",
+      "description": "Get in touch with App Design House. Fill out the form or contact us directly for software, agency, and consulting services."
     },
     "hero": {
       "title": {

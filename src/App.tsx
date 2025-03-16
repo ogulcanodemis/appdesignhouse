@@ -5,6 +5,7 @@ import { store } from './store';
 import { ToastProvider } from './contexts/ToastContext';
 import Layout from './components/layout/Layout';
 import ScrollToTop from './components/common/ScrollToTop';
+import GoogleAnalytics from './components/common/GoogleAnalytics';
 import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import LoadingSpinner from './components/common/LoadingSpinner';
@@ -24,6 +25,7 @@ function App() {
         <ToastProvider>
           <Router>
             <ScrollToTop />
+            <GoogleAnalytics />
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
                 <Route element={<Layout />}>

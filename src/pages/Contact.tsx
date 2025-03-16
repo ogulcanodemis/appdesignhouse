@@ -263,19 +263,19 @@ const Contact = () => {
           name="description"
           content={t('contactPage.meta.description')}
         />
-        <meta name="keywords" content="iletişim, yazılım hizmetleri, ajans hizmetleri, danışmanlık, AppHouse Design, İstanbul" />
+        <meta name="keywords" content="iletişim, yazılım hizmetleri, ajans hizmetleri, danışmanlık, App Design House, İstanbul" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="İletişim - AppHouse Design" />
-        <meta property="og:description" content="AppHouse Design ile iletişime geçin. Yazılım, ajans ve danışmanlık hizmetleri için form doldurun veya direkt bize ulaşın." />
+        <meta property="og:title" content="İletişim - App Design House" />
+        <meta property="og:description" content="App Design House ile iletişime geçin. Yazılım, ajans ve danışmanlık hizmetleri için form doldurun veya direkt bize ulaşın." />
         <meta property="og:image" content="/images/contact-og.jpg" />
         <meta property="og:url" content="https://appdesignhouse.com/contact" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="İletişim - AppHouse Design" />
-        <meta name="twitter:description" content="AppHouse Design ile iletişime geçin. Yazılım, ajans ve danışmanlık hizmetleri için form doldurun veya direkt bize ulaşın." />
+        <meta name="twitter:title" content="İletişim - App Design House" />
+        <meta name="twitter:description" content="App Design House ile iletişime geçin. Yazılım, ajans ve danışmanlık hizmetleri için form doldurun veya direkt bize ulaşın." />
         <meta name="twitter:image" content="/images/contact-og.jpg" />
 
         {/* Canonical URL */}
@@ -293,7 +293,7 @@ const Contact = () => {
 
         {/* Ek Meta Etiketleri */}
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="AppHouse Design" />
+        <meta name="author" content="App Design House" />
         <meta name="geo.region" content="TR-34" />
         <meta name="geo.placename" content="İstanbul" />
         <meta name="geo.position" content="41.0082;28.9784" />

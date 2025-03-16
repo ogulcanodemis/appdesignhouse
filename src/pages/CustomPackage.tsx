@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useForm, FormProvider } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { trackCustomPackageStep, trackWhatsAppSend } from '../components/common/GoogleAnalytics';
 
 // Adım bileşenleri
 import ServiceCategoryStep from '../components/custom-package/ServiceCategoryStep';
@@ -28,6 +29,11 @@ type PackageFormData = {
 const CustomPackage = () => {
   const { t, i18n } = useTranslation();
   const [currentStep, setCurrentStep] = useState(0);
+  
+  // Sayfa yüklendiğinde ilk adımı izle
+  useEffect(() => {
+    trackCustomPackageStep(1, t('custom_package.steps.category'));
+  }, [t]);
   
   // Validasyon şeması
   const schema = yup.object({
@@ -101,13 +107,25 @@ const CustomPackage = () => {
     const isValid = await trigger(stepSchemas[currentStep].fields as any);
     
     if (isValid) {
+      const nextStep = currentStep + 1;
       setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1));
+      
+      // Adım geçişini izle
+      if (nextStep < steps.length) {
+        trackCustomPackageStep(nextStep + 1, t(`custom_package.steps.${Object.keys(steps[nextStep])[0]}`));
+      }
     }
   };
 
   // Geri gitme fonksiyonu
   const goToPreviousStep = () => {
+    const prevStep = currentStep - 1;
     setCurrentStep((prev) => Math.max(prev - 1, 0));
+    
+    // Adım geçişini izle
+    if (prevStep >= 0) {
+      trackCustomPackageStep(prevStep + 1, t(`custom_package.steps.${Object.keys(steps[prevStep])[0]}`));
+    }
   };
 
   // Kategori ve hizmet isimlerini çevir
@@ -147,8 +165,16 @@ const CustomPackage = () => {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     
-    // WhatsApp'ı aç
-    window.open(whatsappUrl, '_blank');
+    // WhatsApp gönderimini izle ve dönüşüm olarak kaydet
+    trackWhatsAppSend(data);
+    
+    // Fiyat teklifi dönüşümü olarak da izle
+    if (typeof window.gtag_report_conversion === 'function') {
+      window.gtag_report_conversion(whatsappUrl);
+    } else {
+      // Dönüşüm izleme fonksiyonu yoksa normal olarak WhatsApp'ı aç
+      window.open(whatsappUrl, '_blank');
+    }
   };
 
   return (

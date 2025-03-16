@@ -203,13 +203,13 @@ const Projects = () => {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Yenilikçi Yazılım Projeleri | AppHouse Design" />
+        <meta property="og:title" content="Yenilikçi Yazılım Projeleri | App Design House" />
         <meta property="og:description" content="Modern teknolojilerle geliştirilen yenilikçi yazılım projeleri. Mobil uygulamalar, web platformları ve yapay zeka çözümleri." />
         <meta property="og:image" content="/images/projects-og.jpg" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Yenilikçi Yazılım Projeleri | AppHouse Design" />
+        <meta name="twitter:title" content="Yenilikçi Yazılım Projeleri | App Design House" />
         <meta name="twitter:description" content="Modern teknolojilerle geliştirilen yenilikçi yazılım projeleri. Mobil uygulamalar, web platformları ve yapay zeka çözümleri." />
         <meta name="twitter:image" content="/images/projects-og.jpg" />
 

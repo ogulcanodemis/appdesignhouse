@@ -2,13 +2,65 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/logos/ADH_FAVICON_T.svg" />
-    <link rel="alternate icon" type="image/png" href="/assets/images/logos/ADH_FAVICON_T.png" />
-    <link rel="apple-touch-icon" href="/assets/images/logos/ADH_FAVICON.png" />
+    <!-- Temel Favicon -->
+    <link rel="icon" href="/assets/images/logos/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/logos/favicon-96x96.png" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/logos/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/logos/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/logos/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/logos/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/logos/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/logos/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/logos/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/logos/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/apple-icon-180x180.png" />
+    
+    <!-- Android Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/logos/android-icon-192x192.png" />
+    
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#F72585" />
+    <meta name="msapplication-TileImage" content="/assets/images/logos/ms-icon-144x144.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#F72585" />
-    <meta name="description" content="AppHouse Design - Yazılım, Ajans ve Danışmanlık Hizmetleri" />
-    <title>AppHouse Design</title>
+    <meta name="description" content="App Design House - Yazılım, Ajans ve Danışmanlık Hizmetleri" />
+    <title>App Design House</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16931922637"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16931922637');
+    </script>
+    
+    <!-- Event snippet for Fiyat teklifi isteyin conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16931922637/H5b5CKGOlqsaEM3F4ok_',
+            'value': 1.0,
+            'currency': 'TRY',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

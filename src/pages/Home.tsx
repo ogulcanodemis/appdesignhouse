@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>AppHouse Design - Yazılım, Ajans ve Danışmanlık Hizmetleri</title>
+        <title>App Design House - Yazılım, Ajans ve Danışmanlık Hizmetleri</title>
         <meta name="description" content="Modern ve yenilikçi yazılım, ajans ve danışmanlık hizmetleriyle işinizi bir üst seviyeye taşıyoruz." />
       </Helmet>
 

@@ -12,7 +12,7 @@ const Logo = ({ isMenuOpen = false }) => {
       <source srcSet={`/assets/images/logos/ADH_LOGO_${isMenuOpen ? 'WHITE' : 'BLACK'}.svg`} type="image/svg+xml" />
       <img 
         src={`/assets/images/logos/ADH_LOGO_${isMenuOpen ? 'WHITE' : 'BLACK'}.png`}
-        alt="AppHouse Design Logo" 
+        alt="App Design House Logo" 
         className="h-4 md:h-6 w-auto"
       />
     </picture>
@@ -65,7 +65,7 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 className={`text-gray-700 hover:text-primary transition-colors ${
-                  item.path === '/contact' ? 'btn btn-primary' : ''
+                  item.path === '/contact' ? 'btn btn-primary text-white' : ''
                 }`}
               >
                 {t(`navigation.${item.key}`)}
@@ -204,7 +204,7 @@ const Header = () => {
                         to={item.path}
                         className={`block text-center text-lg font-medium relative group ${
                           item.path === '/contact'
-                            ? 'btn btn-primary text-base px-6 py-3 w-full backdrop-blur-sm bg-white/10'
+                            ? 'btn btn-primary text-white text-base px-6 py-3 w-full backdrop-blur-sm bg-white/10'
                             : 'text-white/90 hover:text-white transition-colors py-2'
                         }`}
                         onClick={() => setIsOpen(false)}

@@ -43,7 +43,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Hakkımızda - AppHouse Design</title>
+        <title>Hakkımızda - App Design House</title>
         <meta
           name="description"
           content={t('aboutPage.hero.description')}

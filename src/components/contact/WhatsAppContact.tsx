@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { memo, useState } from 'react';
+import { trackPriceQuoteConversion } from '../common/GoogleAnalytics';
 
 const WhatsAppContact = () => {
   const { t } = useTranslation();
@@ -26,6 +27,17 @@ const WhatsAppContact = () => {
   // Hazır mesaj seçildiğinde çağrılacak fonksiyon
   const handleSelectMessage = (message: string) => {
     setSelectedMessage(message);
+  };
+
+  // WhatsApp butonuna tıklandığında dönüşüm izleme
+  const handleWhatsAppClick = () => {
+    // Fiyat teklifi mesajı seçilmişse dönüşüm olarak izle
+    if (selectedMessage === t('contactPage.whatsapp.quickMessages.quote')) {
+      return trackPriceQuoteConversion(getWhatsAppUrl());
+    }
+    // Diğer durumlarda normal olarak WhatsApp'a yönlendir
+    window.open(getWhatsAppUrl(), '_blank');
+    return false;
   };
 
   return (
@@ -100,10 +112,8 @@ const WhatsAppContact = () => {
           </div>
         </div>
 
-        <motion.a
-          href={getWhatsAppUrl()}
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.button
+          onClick={handleWhatsAppClick}
           className="block w-full py-4 px-6 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg text-center transition-colors duration-300"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
@@ -114,7 +124,7 @@ const WhatsAppContact = () => {
             </svg>
             <span>{t('contactPage.whatsapp.button')}</span>
           </div>
-        </motion.a>
+        </motion.button>
 
         <div className="text-center text-sm text-gray-500 mt-4">
           <p>{t('contactPage.whatsapp.availability')}</p>

@@ -9,7 +9,7 @@ const Logo = () => {
       <source srcSet="/assets/images/logos/ADH_LOGO_WHITE.svg" type="image/svg+xml" />
       <img 
         src="/assets/images/logos/ADH_LOGO_WHITE.png" 
-        alt="AppHouse Design Logo" 
+        alt="App Design House Logo" 
         className="h-4 md:h-6 w-auto"
       />
     </picture>
